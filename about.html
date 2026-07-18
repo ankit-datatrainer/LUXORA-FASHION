@@ -107,22 +107,59 @@
 <body class="font-body-md">
 <!-- Sticky Header Container -->
 <div class="sticky top-0 z-[60] w-full flex flex-col">
-<!-- Small TopAppBar (Announcement) -->
-<header class="bg-primary flex justify-center items-center text-center w-full py-1.5 px-2 leading-tight">
-<span class="text-on-primary font-label-md text-[10px] md:text-label-md tracking-wider md:tracking-[0.2em] uppercase">For Urgent Express Shipping - Whatsapp us | Prepaid Orders FREE Blindfold</span>
-</header>
-<!-- Medium TopAppBar -->
-<nav class="bg-surface-bright flex justify-between items-center w-full px-4 md:px-5 py-2 md:py-4 border-b border-outline-variant">
-<div class="flex items-center gap-4">
-<button class="material-symbols-outlined text-primary scale-100 active:scale-95 transition-transform" data-icon="menu">menu</button>
+    <!-- TopAppBar Small (Announcement Bar) -->
+    <header class="bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container font-label-md text-[10px] md:text-label-md tracking-wider md:tracking-[0.2em] uppercase flex justify-center items-center text-center w-full py-1.5 px-2 leading-tight">
+        For Urgent Express Shipping - Whatsapp us | Prepaid Orders FREE Blindfold
+    </header>
+    <!-- TopAppBar Medium (Navigation) -->
+    <nav class="bg-surface-bright dark:bg-surface border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center w-full px-4 md:px-5 py-2 md:py-4 max-w-container-max mx-auto">
+<!-- Hamburger for Mobile -->
+<button class="md:hidden p-2 active:scale-95 transition-transform" onclick="toggleMenu()">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Brand Logo -->
+<a class="font-headline-lg text-[22px] md:text-headline-lg tracking-wider md:tracking-widest text-primary dark:text-on-surface uppercase leading-none" href="index.html">LUXORA FASHION</a>
+<!-- Desktop Links -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary border-b border-primary pb-1" href="shop.html">Roleplay & Cosplay</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="shop.html">Babydolls</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="shop.html">Gift for Her</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="shop.html">LATEX EDITION</a>
 </div>
-<div class="font-headline-lg text-[22px] md:text-headline-lg tracking-wider md:tracking-widest text-primary leading-none">
-            LUXORA FASHION
-        </div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</span>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-2 md:gap-4">
+<button class="hidden md:block material-symbols-outlined hover:text-secondary transition-colors">search</button>
+<button class="material-symbols-outlined hover:text-secondary transition-colors">person</button>
+<button class="hidden md:block material-symbols-outlined hover:text-secondary transition-colors">favorite</button>
+<button class="relative material-symbols-outlined hover:text-secondary transition-colors cart-icon-toggle">
+    shopping_bag
+    <span class="cart-badge absolute -top-1 -right-2 bg-error text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold" style="display:none;">0</span>
+</button>
 </div>
-</nav>
+</div>
+    </nav>
+</div>
+<!-- Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-surface-bright z-[70] translate-x-full transition-transform duration-500 md:hidden" id="mobile-menu">
+<div class="p-6 flex flex-col h-full">
+<div class="flex justify-between items-center mb-12">
+<span class="font-headline-lg text-headline-lg tracking-widest uppercase">LUXORA</span>
+<button class="material-symbols-outlined" onclick="toggleMenu()">close</button>
+</div>
+<div class="flex flex-col gap-8">
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">Roleplay & Cosplay</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">Babydolls</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">Gift for Her</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">LATEX EDITION</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">Plus Size Collection</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4 text-error" href="shop.html">Roleplay & Cosplay</a>
+</div>
+<div class="mt-auto pt-12">
+<p class="font-label-md text-label-md uppercase tracking-widest opacity-60 mb-4">Support</p>
+<a class="block py-2" href="contact.html">Store Locator</a>
+<a class="block py-2" href="contact.html">Contact Us</a>
+</div>
 </div>
 <main class="w-full">
 <!-- Hero Section -->
