@@ -10,15 +10,12 @@ const PRODUCTS = {
     'prod_8': { id: 'prod_8', name: 'Hot Muse Lace Fantasy Set', price: 899.0, image: 'images/products/prod_8.jpg' },
     'prod_9': { id: 'prod_9', name: 'Afterparty Pearl Shirt', price: 999.0, image: 'images/products/prod_9.jpg' },
     'prod_10': { id: 'prod_10', name: 'Leopard Baddie Bodysuit+Belt', price: 949.0, image: 'images/products/prod_10.jpg' },
-    'prod_11': { id: 'prod_11', name: 'Babygirl Lingerie set with gloves', price: 899.0, image: 'images/products/prod_11.jpg' },
-    'prod_13': { id: 'prod_13', name: 'Bunny Velvet Roleplay', price: 1199.0, image: 'images/products/prod_13.jpg' },
+    'prod_11': { id: 'prod_11', name: 'Babygirl Lingerie set with gloves', price: 899.0, image: 'images/products/prod_11.jpg' },    'prod_13': { id: 'prod_13', name: 'Bunny Velvet Roleplay', price: 1199.0, image: 'images/products/prod_13.jpg' },
     'prod_14': { id: 'prod_14', name: 'Rainbow Babie', price: 849.0, image: 'images/products/prod_14.png' },
     'prod_15': { id: 'prod_15', name: 'Bubblegum Baddie', price: 949.0, image: 'images/products/prod_15.png' },
     'prod_16': { id: 'prod_16', name: 'Bridal Roleplay Dress', price: 999.0, image: 'images/products/prod_16.jpg' },
-    'prod_17': { id: 'prod_17', name: 'Latex Main Character Jacket', price: 1199.0, image: 'images/products/prod_17.jpg' },
-    'prod_19': { id: 'prod_19', name: 'Leopard Tease Stocking Set (4pc)', price: 999.0, image: 'images/products/prod_19.jpg' },
-    'prod_20': { id: 'prod_20', name: 'Black flow Long lace lingerie', price: 799.0, image: 'images/products/prod_20.jpg' },
-    'prod_22': { id: 'prod_22', name: 'Latex Gold Leash set', price: 899.0, image: 'images/products/prod_22.png' },
+    'prod_17': { id: 'prod_17', name: 'Latex Main Character Jacket', price: 1199.0, image: 'images/products/prod_17.jpg' },    'prod_19': { id: 'prod_19', name: 'Leopard Tease Stocking Set (4pc)', price: 999.0, image: 'images/products/prod_19.jpg' },
+    'prod_20': { id: 'prod_20', name: 'Black flow Long lace lingerie', price: 799.0, image: 'images/products/prod_20.jpg' },    'prod_22': { id: 'prod_22', name: 'Latex Gold Leash set', price: 899.0, image: 'images/products/prod_22.png' },
     'prod_23': { id: 'prod_23', name: 'The Forbidden Dress', price: 799.0, image: 'images/products/prod_23.jpg' },
     'prod_24': { id: 'prod_24', name: 'Baddie Garter Set & Bodysuit', price: 749.0, image: 'images/products/prod_24.jpg' },
     'prod_25': { id: 'prod_25', name: 'Cheetah Print Garter Set', price: 999.0, image: 'images/products/prod_25.jpg' },
@@ -109,7 +106,7 @@ function closeCart() {
 function updateCartUI() {
     const cartItemsContainer = document.getElementById('cart-items');
     const cartTotalElement = document.getElementById('cart-total');
-    const cartCountElements = document.querySelectorAll('.cart-count');
+    const cartCountElements = document.querySelectorAll('.cart-count, .cart-badge');
     
     if (!cartItemsContainer) return;
 
@@ -186,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
     injectCartHTML();
     
     // Add click listeners to any bag icons
-    const bagIcons = document.querySelectorAll('.shopping-bag-icon');
+    const bagIcons = document.querySelectorAll('.shopping-bag-icon, .cart-icon-toggle');
     bagIcons.forEach(icon => {
         icon.addEventListener('click', (e) => {
             e.preventDefault();
