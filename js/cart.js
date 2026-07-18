@@ -37,6 +37,8 @@ const PRODUCTS = {
 
 
 let cart = JSON.parse(localStorage.getItem('luxora_cart')) || [];
+// Clean up corrupt/invalid localStorage items to prevent page crashes
+cart = cart.filter(item => item && typeof item.price === 'number' && item.name);
 
 function saveCart() {
     localStorage.setItem('luxora_cart', JSON.stringify(cart));
@@ -118,17 +120,19 @@ function updateCartUI() {
         cartItemsContainer.innerHTML = '<p class="text-gray-500 mt-10 text-center">Your cart is empty.</p>';
     } else {
         cart.forEach((item, index) => {
-            const itemTotal = item.price * item.quantity;
+            const price = item.price || 0;
+            const qty = item.quantity || 0;
+            const itemTotal = price * qty;
             total += itemTotal;
-            itemCount += item.quantity;
+            itemCount += qty;
 
             cartItemsContainer.innerHTML += `
                 <div class="flex gap-4 mb-6 border-b border-gray-100 pb-6">
-                    <img src="${item.image}" alt="${item.name}" class="w-24 h-32 object-cover">
+                    <img src="${item.image || ''}" alt="${item.name || 'Product'}" class="w-24 h-32 object-cover">
                     <div class="flex-1">
-                        <h4 class="font-bold text-sm mb-1">${item.name}</h4>
-                        <p class="text-xs text-gray-500 mb-2">Size: ${item.size}</p>
-                        <p class="text-sm mb-3">Rs. ${item.price.toFixed(2)}</p>
+                        <h4 class="font-bold text-sm mb-1">${item.name || 'Product'}</h4>
+                        <p class="text-xs text-gray-500 mb-2">Size: ${item.size || 'M'}</p>
+                        <p class="text-sm mb-3">Rs. ${price.toFixed(2)}</p>
                         <div class="flex items-center gap-3">
                             <button onclick="updateQuantity(${index}, -1)" class="w-6 h-6 flex items-center justify-center border border-gray-300">-</button>
                             <span class="text-sm">${item.quantity}</span>
