@@ -435,97 +435,222 @@
     </div>
 </section>
 <!-- Best Sellers Section -->
-<section class="py-section-gap bg-black text-white">
-<div class="px-5 md:px-margin-x">
-    
-    <div class="flex justify-center items-center mb-12">
-        <h2 class="font-headline-lg text-[24px] md:text-[32px] tracking-wide">
-            You are in <span class="border-b-2 border-white/70 pb-1 cursor-pointer flex items-center gap-1 inline-flex">Best sellers <span class="material-symbols-outlined text-[24px]">expand_more</span></span>
-        </h2>
-    </div>
-
-    <!-- Product Grid (6 columns) -->
-    <div class="flex gap-4 md:gap-6 overflow-x-auto hide-scroll snap-x pb-8">
+<section class="py-16 bg-[#FAFAFA] border-t border-b border-outline-variant">
+    <div class="px-5 md:px-12 lg:px-20 max-w-container-max mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="font-headline-lg text-[28px] md:text-[36px] tracking-[0.2em] uppercase text-black">Best Sellers</h2>
+            <div class="h-[1px] w-12 bg-black mx-auto mt-4"></div>
+        </div>
         
-        <!-- Product 1 -->
-        <div class="min-w-[200px] md:min-w-[calc(16.666%-20px)] snap-start group cursor-pointer" onclick="window.location.href=\'product.html?id=pikachu\'" onclick="window.location.href=\'product.html?id=desert\'" onclick="window.location.href=\'product.html?id=dominatrix\'" onclick="window.location.href=\'product.html?id=bridal\'" onclick="window.location.href=\'product.html?id=roleplay\'" onclick="window.location.href=\'product.html?id=sugarbaby\'">
-            <div class="relative aspect-[3/4] mb-4 overflow-hidden bg-zinc-900">
-                <img src="images/products/prod_0.png" alt="Sugarbaby" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            </div>
+        <!-- Product Grid (12 items) -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 md:gap-x-12 lg:gap-x-16 gap-y-12 lg:gap-y-20">
+            
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_0'">
             <div>
-                <h3 class="font-body-md text-[13px] md:text-sm font-bold tracking-wide mb-1">Sugarbaby 🍓 🎀</h3>
-                <p class="font-body-md text-[13px] text-gray-300">Rs. 899.00</p>
-            </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="min-w-[200px] md:min-w-[calc(16.666%-20px)] snap-start group cursor-pointer">
-            <div class="relative aspect-[3/4] mb-4 overflow-hidden bg-zinc-900">
-                <img src="images/products/prod_1.jpg" alt="Latex Bunny Roleplay Set" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            </div>
-            <div>
-                <h3 class="font-body-md text-[13px] md:text-sm font-bold tracking-wide mb-1">Latex Bunny Roleplay Set 🐰</h3>
-                <p class="font-body-md text-[13px] text-gray-300">Rs. 1,199.00</p>
-            </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="min-w-[200px] md:min-w-[calc(16.666%-20px)] snap-start group cursor-pointer">
-            <div class="relative aspect-[3/4] mb-4 overflow-hidden bg-zinc-900">
-                <img src="images/products/prod_2.jpg" alt="Bridal theme Lace Set" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            </div>
-            <div>
-                <h3 class="font-body-md text-[13px] md:text-sm font-bold tracking-wide mb-1">Bridal theme Lace Set 🤍</h3>
-                <p class="font-body-md text-[13px] text-gray-300">Rs. 999.00</p>
-                <div class="flex gap-2 mt-2">
-                    <div class="w-4 h-4 rounded-full bg-white border border-gray-400"></div>
-                    <div class="w-4 h-4 rounded-full bg-red-500 border border-transparent"></div>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_0.png" alt="Sugarbaby" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">Sugarbaby</h3>
+                    <p class="text-gray-500 text-sm">Rs. 899.00</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="min-w-[200px] md:min-w-[calc(16.666%-20px)] snap-start group cursor-pointer">
-            <div class="relative aspect-[3/4] mb-4 overflow-hidden bg-zinc-900">
-                <img src="images/products/prod_3.jpg" alt="Dominatrix Harness Dress" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_0', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
             </div>
+        </div>
+        
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_1'">
             <div>
-                <h3 class="font-body-md text-[13px] md:text-sm font-bold tracking-wide mb-1">Dominatrix Harness Dress<br>(Stocking incl)</h3>
-                <p class="font-body-md text-[13px] text-gray-300 mt-1">Rs. 999.00</p>
-                <div class="flex gap-2 mt-2">
-                    <div class="w-4 h-4 rounded-full bg-black border border-gray-700"></div>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_1.jpg" alt="Latex Bunny Roleplay Set" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">Latex Bunny Roleplay Set</h3>
+                    <p class="text-gray-500 text-sm">Rs. 1199.00</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Product 5 -->
-        <div class="min-w-[200px] md:min-w-[calc(16.666%-20px)] snap-start group cursor-pointer">
-            <div class="relative aspect-[3/4] mb-4 overflow-hidden bg-zinc-900">
-                <img src="images/products/prod_4.jpg" alt="Desert Fantasy Set" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_1', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
             </div>
+        </div>
+        
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_2'">
             <div>
-                <h3 class="font-body-md text-[13px] md:text-sm font-bold tracking-wide mb-1">Desert Fantasy Set</h3>
-                <p class="font-body-md text-[13px] text-gray-300">Rs. 999.00</p>
-                <div class="flex gap-2 mt-2">
-                    <div class="w-4 h-4 rounded-full bg-red-500 border border-transparent"></div>
-                    <div class="w-4 h-4 rounded-full bg-pink-300 border border-transparent"></div>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_2.jpg" alt="Bridal theme Lace Set" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">Bridal theme Lace Set</h3>
+                    <p class="text-gray-500 text-sm">Rs. 999.00</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Product 6 -->
-        <div class="min-w-[200px] md:min-w-[calc(16.666%-20px)] snap-start group cursor-pointer">
-            <div class="relative aspect-[3/4] mb-4 overflow-hidden bg-zinc-900">
-                <img src="images/products/prod_5.jpg" alt="Pikachu Cosplay Bodysuit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_2', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
             </div>
+        </div>
+        
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_3'">
             <div>
-                <h3 class="font-body-md text-[13px] md:text-sm font-bold tracking-wide mb-1 flex items-center gap-1"><span class="text-yellow-400">⚡</span> Pikachu Cosplay Bodysuit</h3>
-                <p class="font-body-md text-[13px] text-gray-300">Rs. 749.00</p>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_3.jpg" alt="Dominatrix Harness Dress (Stocking incl)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">Dominatrix Harness Dress (Stocking incl)</h3>
+                    <p class="text-gray-500 text-sm">Rs. 999.00</p>
+                </div>
+            </div>
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_3', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
             </div>
         </div>
-
+        
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_4'">
+            <div>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_4.jpg" alt="Desert Fantasy Set" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">Desert Fantasy Set</h3>
+                    <p class="text-gray-500 text-sm">Rs. 999.00</p>
+                </div>
+            </div>
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_4', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
+            </div>
+        </div>
+        
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_5'">
+            <div>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_5.jpg" alt="Pikachu Cosplay Bodysuit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">Pikachu Cosplay Bodysuit</h3>
+                    <p class="text-gray-500 text-sm">Rs. 749.00</p>
+                </div>
+            </div>
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_5', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
+            </div>
+        </div>
+        
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_6'">
+            <div>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_6.jpg" alt="cat roleplay fantasy Full set with Headgear" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">cat roleplay fantasy Full set with Headgear</h3>
+                    <p class="text-gray-500 text-sm">Rs. 999.00</p>
+                </div>
+            </div>
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_6', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
+            </div>
+        </div>
+        
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_7'">
+            <div>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_7.jpg" alt="Dark Web Cosplay Bodysuit (stockings included)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">Dark Web Cosplay Bodysuit (stockings included)</h3>
+                    <p class="text-gray-500 text-sm">Rs. 999.00</p>
+                </div>
+            </div>
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_7', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
+            </div>
+        </div>
+        
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_8'">
+            <div>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_8.jpg" alt="Hot Muse Lace Fantasy Set" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">Hot Muse Lace Fantasy Set</h3>
+                    <p class="text-gray-500 text-sm">Rs. 899.00</p>
+                </div>
+            </div>
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_8', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
+            </div>
+        </div>
+        
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_9'">
+            <div>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_9.jpg" alt="Afterparty Pearl Shirt" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">Afterparty Pearl Shirt</h3>
+                    <p class="text-gray-500 text-sm">Rs. 999.00</p>
+                </div>
+            </div>
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_9', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
+            </div>
+        </div>
+        
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_10'">
+            <div>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_10.jpg" alt="Leopard Baddie Bodysuit+Belt" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">Leopard Baddie Bodysuit+Belt</h3>
+                    <p class="text-gray-500 text-sm">Rs. 949.00</p>
+                </div>
+            </div>
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_10', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
+            </div>
+        </div>
+        
+        <div class="group cursor-pointer flex flex-col justify-between h-full" onclick="window.location.href='product.html?id=prod_11'">
+            <div>
+                <div class="relative overflow-hidden bg-gray-100 aspect-[3/4] mb-4">
+                    <img src="images/products/prod_11.jpg" alt="Babygirl Lingerie set with gloves" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="px-1 mt-2">
+                    <h3 class="font-bold text-sm uppercase tracking-widest mb-1 text-black line-clamp-2">Babygirl Lingerie set with gloves</h3>
+                    <p class="text-gray-500 text-sm">Rs. 899.00</p>
+                </div>
+            </div>
+            <div class="mt-4 px-1">
+                <button onclick="event.stopPropagation(); addToCart('prod_11', 'M', 1);" class="w-full bg-black text-white border border-black py-3 uppercase tracking-widest text-[10px] font-bold hover:bg-transparent hover:text-black transition-colors duration-300 flex justify-center items-center gap-2">
+                    <span class="material-symbols-outlined text-[14px]">shopping_bag</span> Add to Cart
+                </button>
+            </div>
+        </div>
+        
+        </div>
     </div>
-</div>
 </section>
 <!-- Service Icons Bar -->
 <section class="bg-surface-container-high py-12 px-5">
