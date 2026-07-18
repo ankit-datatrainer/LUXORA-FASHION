@@ -169,7 +169,7 @@
 </div>
 </div>
 <!-- Filter & Sort Bar (Sticky) -->
-<div class="px-5 md:px-12 lg:px-20 py-5 border-b border-outline-variant flex justify-between items-center bg-surface-bright sticky top-[110px] z-40">
+<div id="filter-bar-container" class="px-5 md:px-12 lg:px-20 py-5 border-b border-outline-variant flex justify-between items-center bg-surface-bright sticky top-0 transition-all duration-100 z-40">
 <button class="flex items-center space-x-2 font-label-md text-label-md uppercase tracking-widest" id="filter-btn">
 <span class="material-symbols-outlined text-sm">tune</span>
 <span>Filter &amp; Sort</span>
@@ -569,4 +569,27 @@
 </div>
 </div>
 <script src="js/cart.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.querySelector('.sticky.top-0');
+            const filterBar = document.getElementById('filter-bar-container');
+            
+            if (header && filterBar) {
+                const updatePosition = () => {
+                    filterBar.style.top = `${header.offsetHeight}px`;
+                };
+                
+                // Update position on window resize and scroll
+                window.addEventListener('resize', updatePosition);
+                updatePosition();
+                
+                // Add a small observer to watch for header height changes (e.g. mobile menu toggle)
+                if (window.ResizeObserver) {
+                    const observer = new ResizeObserver(updatePosition);
+                    observer.observe(header);
+                }
+            }
+        });
+    </script>
 </body></html>
