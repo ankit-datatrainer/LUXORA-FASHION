@@ -140,10 +140,14 @@
 <!-- Main Content -->
 <main class="w-full">
 <!-- Shop Header & Controls -->
-<section class="px-5 py-8 bg-surface-container-low">
-<h1 class="font-headline-lg text-headline-lg-mobile eb-garamond mb-2">New Season Arrivals</h1>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">Elevate your daily ensemble with our curated collection of luxury essentials.</p>
-<div class="flex items-center justify-between border-y border-outline-variant py-4">
+<div class="px-5 md:px-12 lg:px-20 py-12 border-b border-outline-variant flex justify-between items-end">
+    <div>
+        <h1 class="font-headline-lg text-headline-lg-mobile md:text-[40px] leading-tight mb-3">New Season Arrivals</h1>
+        <p class="font-body-md text-body-md md:text-body-lg text-on-surface-variant max-w-lg">Elevate your daily ensemble with our curated collection of luxury essentials.</p>
+    </div>
+</div>
+<!-- Filter & Sort Bar (Sticky) -->
+<div class="px-5 md:px-12 lg:px-20 py-5 border-b border-outline-variant flex justify-between items-center bg-surface-bright sticky top-[110px] z-40">
 <button class="flex items-center space-x-2 font-label-md text-label-md uppercase tracking-widest" id="filter-btn">
 <span class="material-symbols-outlined text-sm">tune</span>
 <span>Filter &amp; Sort</span>
@@ -152,17 +156,16 @@
                     128 Items
                 </div>
 </div>
-</section>
 <!-- Product Grid (2 Columns for Mobile as requested) -->
-<section class="px-5 py-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10">
+<section class="px-5 md:px-12 lg:px-20 py-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 md:gap-x-12 lg:gap-x-16 gap-y-12 lg:gap-y-20">
 <!-- Product Card 1 -->
 <div class="group cursor-pointer">
 <div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-3">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-resolution lifestyle photography of a woman wearing a minimalist oversized linen shirt in cream color, standing in a sun-drenched architectural space with soft shadows. The image has a high-contrast editorial fashion feel with a clean white and taupe palette, reflecting sophisticated luxury and timeless elegance." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/81A3EB64-59FF-473D-910F-2577A2B46F4B.jpg?v=1783893989"/>
 <div class="absolute top-2 left-2 bg-primary text-on-primary font-label-md text-[10px] px-2 py-0.5 tracking-widest uppercase">NEW</div>
 </div>
-<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Erotic fishnet</h3>
-<p class="font-body-md text-body-md font-bold mt-1">₹799.00</p>
+<h3 class="font-label-md text-[11px] md:text-xs uppercase tracking-[0.2em] text-on-surface truncate mt-4">Erotic fishnet</h3>
+<p class="font-body-md text-sm md:text-base text-on-surface-variant mt-1">₹799.00</p>
 <div class="flex space-x-2 mt-2">
 <div class="w-3 h-3 rounded-full border border-outline bg-surface-container-low"></div>
 <div class="w-3 h-3 rounded-full border border-outline bg-secondary"></div>
@@ -173,8 +176,8 @@
 <div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-3">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A studio fashion shot of a woman wearing a ribbed tank top in charcoal grey paired with beige tailored trousers. The lighting is soft and cinematic, highlighting the fabric texture against a neutral linen-colored background. The overall aesthetic is minimalist, elite, and calm, typical of a high-end fashion boutique website." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/CD7BF4CA-0D51-498C-8DD0-BCA519951175.jpg?v=1783110627"/>
 </div>
-<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Full body Transparent Stocking</h3>
-<p class="font-body-md text-body-md font-bold mt-1">₹749.00</p>
+<h3 class="font-label-md text-[11px] md:text-xs uppercase tracking-[0.2em] text-on-surface truncate mt-4">Full body Transparent Stocking</h3>
+<p class="font-body-md text-sm md:text-base text-on-surface-variant mt-1">₹749.00</p>
 <div class="flex space-x-2 mt-2">
 <div class="w-3 h-3 rounded-full border border-outline bg-on-surface"></div>
 <div class="w-3 h-3 rounded-full border border-outline bg-outline-variant"></div>
@@ -186,37 +189,37 @@
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant lifestyle photography of a light floral midi dress with a delicate print, hanging in a bright, modern interior with wide tracking and negative space. The image is crisp, utilizing a white and linen color foundation to evoke exclusivity and a boutique experience for luxury fashion shoppers." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/59077486-E5D1-4E5E-9AE9-701CDA830BB6.jpg?v=1781677344"/>
 <div class="absolute top-2 left-2 bg-primary text-on-primary font-label-md text-[10px] px-2 py-0.5 tracking-widest uppercase">Roleplay & Cosplay</div>
 </div>
-<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Shadow Queen</h3>
-<p class="font-body-md text-body-md font-bold mt-1 text-error">$189.00 <span class="line-through text-on-surface-variant font-normal ml-1">$240</span></p>
+<h3 class="font-label-md text-[11px] md:text-xs uppercase tracking-[0.2em] text-on-surface truncate mt-4">Shadow Queen</h3>
+<p class="font-body-md text-sm md:text-base text-error font-medium mt-1">$189.00 <span class="line-through text-on-surface-variant font-normal ml-2">$240</span></p>
 </div>
 <!-- Product Card 4 -->
 <div class="group cursor-pointer">
 <div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-3">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional studio shot of a tailored relaxed blazer in a sophisticated taupe color, worn by a model with a poised and quiet expression. The image features a rigid grid alignment, ample negative space, and a high-contrast foundation of blacks and whites, capturing a timeless luxury fashion brand personality." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/061177E0-7892-489F-B4CB-3086367434F3.jpg?v=1781677325"/>
 </div>
-<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Wifey After Dark Set</h3>
-<p class="font-body-md text-body-md font-bold mt-1">₹799.00</p>
+<h3 class="font-label-md text-[11px] md:text-xs uppercase tracking-[0.2em] text-on-surface truncate mt-4">Wifey After Dark Set</h3>
+<p class="font-body-md text-sm md:text-base text-on-surface-variant mt-1">₹799.00</p>
 </div>
 <!-- Product Card 5 -->
 <div class="group cursor-pointer">
 <div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-3">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of luxury white leather sneakers on a minimalist stone surface with deep shadows. The composition is artistic and editorial, with a focus on quality craftsmanship and premium materials. The lighting is high-key and modern, following an editorial minimalism aesthetic for a fashion masthead look." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/02433E9B-26D8-4A4F-936C-6467E5FE46C8.jpg?v=1781677324"/>
 </div>
-<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Cheetah Print Garter Set</h3>
-<p class="font-body-md text-body-md font-bold mt-1">₹799.00</p>
+<h3 class="font-label-md text-[11px] md:text-xs uppercase tracking-[0.2em] text-on-surface truncate mt-4">Cheetah Print Garter Set</h3>
+<p class="font-body-md text-sm md:text-base text-on-surface-variant mt-1">₹799.00</p>
 </div>
 <!-- Product Card 6 -->
 <div class="group cursor-pointer">
 <div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-3">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial fashion photography of a classic tan leather handbag with gold hardware, placed on a minimalist wooden chair. The scene is shot in a warm, organic palette of taupe and linen tones, creating an aspirational and calm mood. The image is sharp and high-resolution, highlighting the texture of the luxury accessory." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/Screenshot2026-04-11000921.png?v=1781134879"/>
 </div>
-<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Cute Cherry Print nightsuit</h3>
-<p class="font-body-md text-body-md font-bold mt-1">₹999.00</p>
+<h3 class="font-label-md text-[11px] md:text-xs uppercase tracking-[0.2em] text-on-surface truncate mt-4">Cute Cherry Print nightsuit</h3>
+<p class="font-body-md text-sm md:text-base text-on-surface-variant mt-1">₹999.00</p>
 </div>
 </section>
 <!-- Pagination / Load More -->
-<section class="px-5 py-10 flex flex-col items-center">
-<button class="w-full py-4 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-[0.2em] transition-all hover:bg-secondary active:scale-95">
+<section class="px-5 md:px-12 lg:px-20 py-16 flex flex-col items-center">
+<button class="w-full max-w-md py-4 border border-primary text-primary font-label-md text-label-md uppercase tracking-[0.2em] transition-all hover:bg-surface-container active:scale-95">
                 Load More
             </button>
 <p class="mt-4 font-body-md text-body-md text-on-surface-variant">Showing 6 of 128 items</p>
