@@ -141,8 +141,8 @@
     </nav>
 </div>
 <!-- Mobile Menu Overlay -->
-<div class="fixed inset-0 bg-surface-bright z-[70] translate-x-full transition-transform duration-500 md:hidden" id="mobile-menu">
-<div class="p-6 flex flex-col h-full">
+<div class="fixed inset-0 bg-surface-bright z-[70] -translate-x-full transition-transform duration-500 md:hidden" id="mobile-menu">
+<div class="p-6 pb-24 flex flex-col h-full">
 <div class="flex justify-between items-center mb-12">
 <span class="font-headline-lg text-headline-lg tracking-widest uppercase">LUXORA</span>
 <button class="material-symbols-outlined" onclick="toggleMenu()">close</button>
@@ -277,7 +277,7 @@
 </div>
 </footer>
 <!-- Simple Mobile Menu Overlay -->
-<div class="fixed inset-0 bg-surface-bright z-[60] translate-x-full transition-transform duration-500" id="mobile-menu">
+<div class="fixed inset-0 bg-surface-bright z-[60] -translate-x-full transition-transform duration-500" id="mobile-menu">
 <div class="flex justify-between items-center px-6 py-6 border-b border-outline-variant">
 <h2 class="font-headline-lg text-headline-lg tracking-widest">MENU</h2>
 <button id="mobile-menu-close"><span class="material-symbols-outlined text-3xl">close</span></button>
@@ -303,12 +303,33 @@
             menu.classList.add('translate-x-full');
         });
     </script>
-    <script src="js/app.js"></script>
+    <!-- BottomNavBar for Mobile -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-surface-bright/95 backdrop-blur-md border-t border-outline-variant/30 flex justify-around items-center py-3 z-[80] editorial-shadow">
+<a class="flex flex-col items-center gap-1 text-primary" href="index.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-md text-[10px] uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="shop.html">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label-md text-[10px] uppercase">Shop</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-label-md text-[10px] uppercase">Wishlist</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant cart-icon-toggle relative" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-label-md text-[10px] uppercase">Cart</span>
+<span class="cart-badge absolute top-0 right-4 bg-error text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold" style="display:none;">0</span>
+</a>
+</nav>
+
+<script src="js/app.js"></script>
 
 <!-- Cart Drawer (Overlay) -->
 <div class="fixed inset-0 z-[100] invisible pointer-events-none transition-all duration-300" id="cart-drawer-container">
     <div class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300" id="cart-overlay"></div>
-    <div class="absolute right-0 top-0 h-full w-full md:w-[400px] bg-surface-bright shadow-2xl translate-x-full transition-transform duration-300 flex flex-col" id="cart-drawer-panel">
+    <div class="absolute right-0 top-0 h-full w-full md:w-[400px] bg-surface-bright shadow-2xl -translate-x-full transition-transform duration-300 flex flex-col" id="cart-drawer-panel">
         <div class="p-6 flex justify-between items-center border-b border-outline-variant">
             <h2 class="font-headline-lg text-2xl uppercase tracking-widest">Shopping Bag</h2>
             <button id="close-cart" class="active:scale-90 transition-transform">
