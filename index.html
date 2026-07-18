@@ -336,46 +336,103 @@
         slideInterval = setInterval(nextSlide, 5000);
     });
 </script>
-<!-- Quick Categories -->
-<section class="px-5 md:px-margin-x py-section-gap">
-<div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-gutter">
-<!-- Women -->
-<div class="relative group cursor-pointer overflow-hidden aspect-[3/4]">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A close-up fashion shot of a woman wearing a minimalist neutral-toned silk shirt, shot in bright natural light with soft shadows. The overall aesthetic is editorial and luxury, focusing on high-quality fabric and clean lines. Part of a boutique fashion website's category navigation for women's wear." style="background-image: url('https://cdn.shopify.com/s/files/1/0918/2619/2702/files/CD7BF4CA-0D51-498C-8DD0-BCA519951175.jpg?v=1783110627')"></div>
-<div class="absolute inset-0 bg-black/10 transition-opacity group-hover:opacity-30"></div>
-<div class="absolute inset-0 flex flex-col items-center justify-center text-on-primary">
-<span class="font-headline-lg text-headline-lg uppercase tracking-widest mb-2">Babydolls</span>
-<span class="font-label-md text-[10px] tracking-widest border-b border-on-primary pb-0.5 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Shop Now</span>
-</div>
-</div>
-<!-- Men -->
-<div class="relative group cursor-pointer overflow-hidden aspect-[3/4]">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A portrait of a male model in a dark brown leather jacket and classic white t-shirt, looking sideways with a confident, calm expression. The background is a minimalist concrete texture in soft beige tones. The image represents the menswear collection for a luxury fashion brand." style="background-image: url('https://cdn.shopify.com/s/files/1/0918/2619/2702/files/59077486-E5D1-4E5E-9AE9-701CDA830BB6.jpg?v=1781677344')"></div>
-<div class="absolute inset-0 bg-black/10 transition-opacity group-hover:opacity-30"></div>
-<div class="absolute inset-0 flex flex-col items-center justify-center text-on-primary">
-<span class="font-headline-lg text-headline-lg uppercase tracking-widest mb-2">Gift for Her</span>
-<span class="font-label-md text-[10px] tracking-widest border-b border-on-primary pb-0.5 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Shop Now</span>
-</div>
-</div>
-<!-- Bags -->
-<div class="relative group cursor-pointer overflow-hidden aspect-[3/4]">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photography of a beige luxury leather handbag with gold chain detailing, hanging against a textured neutral wall. Sophisticated soft lighting creates elegant shadows, highlighting the premium craftsmanship of the accessory." style="background-image: url('https://cdn.shopify.com/s/files/1/0918/2619/2702/files/061177E0-7892-489F-B4CB-3086367434F3.jpg?v=1781677325')"></div>
-<div class="absolute inset-0 bg-black/10 transition-opacity group-hover:opacity-30"></div>
-<div class="absolute inset-0 flex flex-col items-center justify-center text-on-primary">
-<span class="font-headline-lg text-headline-lg uppercase tracking-widest mb-2">BAGS</span>
-<span class="font-label-md text-[10px] tracking-widest border-b border-on-primary pb-0.5 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Shop Now</span>
-</div>
-</div>
-<!-- Shoes -->
-<div class="relative group cursor-pointer overflow-hidden aspect-[3/4]">
-<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist product photography of clean white leather sneakers on a pair of feet, captured from a low angle against a neutral background. The lighting is crisp and modern, focusing on the sleek silhouette of the luxury footwear." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAe42qa-mp_5JgjRL_kcv-DaqCt3awuCadeGnZFQZ-NtIT5tnehGop2tUcB8ss_XRDcpYsamasUcCEBKiN6k3S8I-2EBuKosge7qKSfHx-jyvBJlCnaDGdUXsM2fdagSUOzG60hqbqQL60j70G4qLIv9HxfvUpNr4qyFmpHsvir7xWZH7DWXJhEg3JHBmnfl_U0hKjPodonNBxW5Acmqj3GEHNpXFLXGLlI0nNgOWutbjasBVlgGdoE')"></div>
-<div class="absolute inset-0 bg-black/10 transition-opacity group-hover:opacity-30"></div>
-<div class="absolute inset-0 flex flex-col items-center justify-center text-on-primary">
-<span class="font-headline-lg text-headline-lg uppercase tracking-widest mb-2">Plus Size Collection</span>
-<span class="font-label-md text-[10px] tracking-widest border-b border-on-primary pb-0.5 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Shop Now</span>
-</div>
-</div>
-</div>
+<!-- Circular Categories Bar -->
+<section class="border-b border-outline-variant bg-surface">
+    <div class="px-5 md:px-margin-x py-6">
+        <div class="flex gap-6 overflow-x-auto hide-scroll snap-x">
+
+            <a href="shop.html?category=bestsellers" class="flex flex-col items-center gap-3 min-w-[80px] sm:min-w-[100px] snap-start group">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-tr from-indigo-200 via-pink-200 to-amber-100 transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full rounded-full overflow-hidden border-[3px] border-surface">
+                        <img src="images/cat_bestsellers.png" alt="Bestsellers" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <span class="font-label-md text-on-surface whitespace-nowrap group-hover:text-primary transition-colors">Bestsellers</span>
+            </a>
+
+            <a href="shop.html?category=new-arrivals" class="flex flex-col items-center gap-3 min-w-[80px] sm:min-w-[100px] snap-start group">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-tr from-indigo-200 via-pink-200 to-amber-100 transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full rounded-full overflow-hidden border-[3px] border-surface">
+                        <img src="images/cat_new_arrivals.png" alt="New Arrivals" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <span class="font-label-md text-on-surface whitespace-nowrap group-hover:text-primary transition-colors">New Arrivals</span>
+            </a>
+
+            <a href="shop.html?category=roleplay" class="flex flex-col items-center gap-3 min-w-[80px] sm:min-w-[100px] snap-start group">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-tr from-indigo-200 via-pink-200 to-amber-100 transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full rounded-full overflow-hidden border-[3px] border-surface">
+                        <img src="images/cat_roleplay.png" alt="Roleplay" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <span class="font-label-md text-on-surface whitespace-nowrap group-hover:text-primary transition-colors">Roleplay</span>
+            </a>
+
+            <a href="shop.html?category=latex" class="flex flex-col items-center gap-3 min-w-[80px] sm:min-w-[100px] snap-start group">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-tr from-indigo-200 via-pink-200 to-amber-100 transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full rounded-full overflow-hidden border-[3px] border-surface">
+                        <img src="images/cat_latex.png" alt="Latex" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <span class="font-label-md text-on-surface whitespace-nowrap group-hover:text-primary transition-colors">Latex</span>
+            </a>
+
+            <a href="shop.html?category=plus-size" class="flex flex-col items-center gap-3 min-w-[80px] sm:min-w-[100px] snap-start group">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-tr from-indigo-200 via-pink-200 to-amber-100 transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full rounded-full overflow-hidden border-[3px] border-surface">
+                        <img src="images/cat_plus_size.png" alt="Plus Size" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <span class="font-label-md text-on-surface whitespace-nowrap group-hover:text-primary transition-colors">Plus Size</span>
+            </a>
+
+            <a href="shop.html?category=babydolls" class="flex flex-col items-center gap-3 min-w-[80px] sm:min-w-[100px] snap-start group">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-tr from-indigo-200 via-pink-200 to-amber-100 transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full rounded-full overflow-hidden border-[3px] border-surface">
+                        <img src="images/cat_babydolls.png" alt="Babydolls" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <span class="font-label-md text-on-surface whitespace-nowrap group-hover:text-primary transition-colors">Babydolls</span>
+            </a>
+
+            <a href="shop.html?category=bridal" class="flex flex-col items-center gap-3 min-w-[80px] sm:min-w-[100px] snap-start group">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-tr from-indigo-200 via-pink-200 to-amber-100 transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full rounded-full overflow-hidden border-[3px] border-surface">
+                        <img src="images/cat_bridal.png" alt="Bridal" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <span class="font-label-md text-on-surface whitespace-nowrap group-hover:text-primary transition-colors">Bridal</span>
+            </a>
+
+            <a href="shop.html?category=lingerie-sets" class="flex flex-col items-center gap-3 min-w-[80px] sm:min-w-[100px] snap-start group">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-tr from-indigo-200 via-pink-200 to-amber-100 transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full rounded-full overflow-hidden border-[3px] border-surface">
+                        <img src="images/cat_lingerie_sets.png" alt="Lingerie Sets" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <span class="font-label-md text-on-surface whitespace-nowrap group-hover:text-primary transition-colors">Lingerie Sets</span>
+            </a>
+
+            <a href="shop.html?category=fishnet" class="flex flex-col items-center gap-3 min-w-[80px] sm:min-w-[100px] snap-start group">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-tr from-indigo-200 via-pink-200 to-amber-100 transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full rounded-full overflow-hidden border-[3px] border-surface">
+                        <img src="images/cat_fishnet.png" alt="Fishnet" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <span class="font-label-md text-on-surface whitespace-nowrap group-hover:text-primary transition-colors">Fishnet</span>
+            </a>
+
+            <a href="shop.html?category=bodysuits" class="flex flex-col items-center gap-3 min-w-[80px] sm:min-w-[100px] snap-start group">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[3px] bg-gradient-to-tr from-indigo-200 via-pink-200 to-amber-100 transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full rounded-full overflow-hidden border-[3px] border-surface">
+                        <img src="images/cat_bodysuits.png" alt="Bodysuits" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <span class="font-label-md text-on-surface whitespace-nowrap group-hover:text-primary transition-colors">Bodysuits</span>
+            </a>
+
+        </div>
+    </div>
 </section>
 <!-- New Arrivals Carousel -->
 <section class="py-section-gap bg-surface-container-low">
