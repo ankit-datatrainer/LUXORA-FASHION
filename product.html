@@ -15,19 +15,62 @@
 <body class="overflow-x-hidden">
 
     <!-- Header will be dynamically injected here for now, or we can copy the index header -->
-    <header id="main-header" class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-5 h-20 flex justify-between items-center">
-            <a href="index.html" class="font-headline text-3xl tracking-widest uppercase">LUXORA</a>
-            <div class="flex items-center gap-6">
-                <a href="index.html" class="text-sm uppercase tracking-widest hover:text-gray-500">Home</a>
-                <a href="shop.html" class="text-sm uppercase tracking-widest hover:text-gray-500">Shop</a>
-                <button class="shopping-bag-icon material-symbols-outlined relative">
-                    shopping_bag
-                    <span class="cart-count absolute -top-1 -right-2 bg-black text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center hidden">0</span>
-                </button>
-            </div>
-        </div>
+    <!-- Sticky Header Container -->
+<div class="sticky top-0 z-[60] w-full flex flex-col">
+    <!-- TopAppBar Small (Announcement Bar) -->
+    <header class="bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container font-label-md text-[10px] md:text-label-md tracking-wider md:tracking-[0.2em] uppercase flex justify-center items-center text-center w-full py-1.5 px-2 leading-tight">
+        For Urgent Express Shipping - Whatsapp us | Prepaid Orders FREE Blindfold
     </header>
+    <!-- TopAppBar Medium (Navigation) -->
+    <nav class="bg-surface-bright dark:bg-surface border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center w-full px-4 md:px-5 py-2 md:py-4 max-w-container-max mx-auto">
+<!-- Hamburger for Mobile -->
+<button class="md:hidden p-2 active:scale-95 transition-transform" onclick="toggleMenu()">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Brand Logo -->
+<a class="font-headline-lg text-[22px] md:text-headline-lg tracking-wider md:tracking-widest text-primary dark:text-on-surface uppercase leading-none" href="index.html">LUXORA FASHION</a>
+<!-- Desktop Links -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary border-b border-primary pb-1" href="shop.html">Roleplay & Cosplay</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="shop.html">Babydolls</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="shop.html">Gift for Her</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="shop.html">LATEX EDITION</a>
+</div>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-2 md:gap-4">
+<button class="hidden md:block material-symbols-outlined hover:text-secondary transition-colors">search</button>
+<button class="material-symbols-outlined hover:text-secondary transition-colors">person</button>
+<button class="hidden md:block material-symbols-outlined hover:text-secondary transition-colors">favorite</button>
+<button class="relative material-symbols-outlined hover:text-secondary transition-colors cart-icon-toggle">
+    shopping_bag
+    <span class="cart-badge absolute -top-1 -right-2 bg-error text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold" style="display:none;">0</span>
+</button>
+</div>
+</div>
+    </nav>
+</div>
+<!-- Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-surface-bright z-[70] translate-x-full transition-transform duration-500 md:hidden" id="mobile-menu">
+<div class="p-6 flex flex-col h-full">
+<div class="flex justify-between items-center mb-12">
+<span class="font-headline-lg text-headline-lg tracking-widest uppercase">LUXORA</span>
+<button class="material-symbols-outlined" onclick="toggleMenu()">close</button>
+</div>
+<div class="flex flex-col gap-8">
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">Roleplay & Cosplay</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">Babydolls</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">Gift for Her</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">LATEX EDITION</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">Plus Size Collection</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4 text-error" href="shop.html">Roleplay & Cosplay</a>
+</div>
+<div class="mt-auto pt-12">
+<p class="font-label-md text-label-md uppercase tracking-widest opacity-60 mb-4">Support</p>
+<a class="block py-2" href="contact.html">Store Locator</a>
+<a class="block py-2" href="contact.html">Contact Us</a>
+</div>
+</div>
 
     <main class="max-w-7xl mx-auto px-5 py-12 md:py-24">
         <div class="flex flex-col md:flex-row gap-12 lg:gap-24">
@@ -88,14 +131,57 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#0a0a0a] text-white border-t border-white/10 mt-20">
-        <div class="px-5 py-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <a class="font-headline text-3xl tracking-[0.2em] text-white uppercase" href="index.html">LUXORA</a>
-            <p class="font-label-md text-[10px] tracking-[0.2em] text-gray-500 uppercase">© 2024-2026 LUXORA FASHION. ALL RIGHTS RESERVED.</p>
-        </div>
-    </footer>
+    <footer class="bg-[#0a0a0a] text-white border-t border-white/10">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-stack-lg px-5 md:px-margin-x py-section-gap max-w-container-max mx-auto">
+<div>
+<a class="font-headline-lg text-[28px] tracking-[0.2em] text-white uppercase block mb-6" href="index.html">LUXORA</a>
+<p class="font-body-md text-gray-400 max-w-xs mb-8 leading-relaxed">
+    Redefining intimacy through the lens of luxury, minimalism and timeless elegance.
+</p>
+<div class="flex gap-5">
+<button class="material-symbols-outlined text-gray-400 hover:text-white transition-colors duration-300">public</button>
+<button class="material-symbols-outlined text-gray-400 hover:text-white transition-colors duration-300">share</button>
+<button class="material-symbols-outlined text-gray-400 hover:text-white transition-colors duration-300">alternate_email</button>
+</div>
+</div>
+<div>
+<h5 class="font-label-md text-[13px] tracking-[0.15em] text-gray-300 uppercase mb-8">Shop</h5>
+<ul class="flex flex-col gap-4 font-body-md text-gray-400">
+<li><a class="hover:text-white transition-colors duration-300" href="shop.html">Roleplay & Cosplay</a></li>
+<li><a class="hover:text-white transition-colors duration-300" href="shop.html">Babydolls</a></li>
+<li><a class="hover:text-white transition-colors duration-300" href="shop.html">Gift for Her</a></li>
+<li><a class="hover:text-white transition-colors duration-300" href="shop.html">Latex Edition</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-[13px] tracking-[0.15em] text-gray-300 uppercase mb-8">About</h5>
+<ul class="flex flex-col gap-4 font-body-md text-gray-400">
+<li><a class="hover:text-white transition-colors duration-300" href="about.html">Our Story</a></li>
+<li><a class="hover:text-white transition-colors duration-300" href="about.html">Sustainability</a></li>
+<li><a class="hover:text-white transition-colors duration-300" href="contact.html">Store Locator</a></li>
+<li><a class="hover:text-white transition-colors duration-300" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-[13px] tracking-[0.15em] text-gray-300 uppercase mb-8">Newsletter</h5>
+<p class="font-body-md text-gray-400 mb-6">Subscribe to receive updates and exclusive offers.</p>
+<div class="flex border-b border-white/20 pb-2 group">
+<input class="bg-transparent border-none outline-none focus:ring-0 w-full placeholder:text-gray-600 text-white" placeholder="Email Address" type="email"/>
+<button class="material-symbols-outlined text-gray-400 group-hover:text-white transition-colors duration-300">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="px-5 md:px-margin-x py-8 border-t border-white/10 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-md text-[10px] tracking-[0.2em] text-gray-500 uppercase">© 2024-2026 LUXORA FASHION. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-8">
+<a class="font-label-md text-[10px] tracking-[0.2em] text-gray-500 hover:text-white transition-colors duration-300 uppercase" href="#">PRIVACY POLICY</a>
+<a class="font-label-md text-[10px] tracking-[0.2em] text-gray-500 hover:text-white transition-colors duration-300 uppercase" href="#">TERMS OF SERVICE</a>
+</div>
+</div>
+</footer>
 
     <!-- Scripts -->
+    <script src="js/app.js"></script>
     <script src="js/cart.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
