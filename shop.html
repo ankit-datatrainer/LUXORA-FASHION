@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUXORA FASHION | SHOP MOBILE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fbf9f9",
+                        "inverse-primary": "#c6c6c6",
+                        "on-secondary-fixed": "#241a0f",
+                        "surface-variant": "#e4e2e2",
+                        "on-surface": "#1b1c1c",
+                        "secondary-fixed": "#f3dfce",
+                        "outline-variant": "#cfc4c5",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#4c4546",
+                        "tertiary": "#000000",
+                        "tertiary-fixed-dim": "#c8c6c3",
+                        "on-tertiary-fixed-variant": "#474745",
+                        "on-secondary-container": "#706254",
+                        "outline": "#7e7576",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f5f3f3",
+                        "on-secondary-fixed-variant": "#514438",
+                        "inverse-surface": "#303031",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#f3dfce",
+                        "surface-container-high": "#e9e8e7",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#efeded",
+                        "tertiary-container": "#1c1c1a",
+                        "secondary-fixed-dim": "#d6c3b3",
+                        "inverse-on-surface": "#f2f0f0",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed": "#e5e2df",
+                        "on-primary-container": "#848484",
+                        "surface-container-highest": "#e4e2e2",
+                        "primary-container": "#1b1b1b",
+                        "on-tertiary-fixed": "#1c1c1a",
+                        "background": "#fbf9f9",
+                        "secondary": "#6a5c4f",
+                        "error-container": "#ffdad6",
+                        "primary": "#000000",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary-container": "#858481",
+                        "on-error": "#ffffff",
+                        "on-background": "#1b1c1c",
+                        "surface-dim": "#dbdad9",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#474747",
+                        "error": "#ba1a1a",
+                        "surface": "#fbf9f9",
+                        "on-primary-fixed": "#1b1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "container-max": "1440px",
+                        "stack-sm": "8px",
+                        "section-gap": "80px",
+                        "margin-x": "40px",
+                        "stack-lg": "32px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["hankenGrotesk"],
+                        "body-lg": ["hankenGrotesk"],
+                        "label-md": ["hankenGrotesk"],
+                        "headline-lg": ["ebGaramond"],
+                        "display-lg": ["ebGaramond"],
+                        "headline-lg-mobile": ["ebGaramond"],
+                        "headline-sm": ["hankenGrotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["15px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+
+
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-background text-on-surface">
+<!-- Utility Bar (Shared Component Type: small) -->
+<header class="bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container flex justify-center items-center w-full py-2 z-50 sticky top-0">
+<span class="font-label-md text-label-md tracking-[0.2em] uppercase">FREE SHIPPING ON ORDERS OVER $99</span>
+</header>
+<!-- Main Navigation (Shared Component Type: medium) -->
+<nav class="bg-surface-bright dark:bg-surface border-b border-outline-variant dark:border-outline sticky top-[32px] z-40">
+<div class="flex justify-between items-center w-full px-5 py-4 max-w-container-max mx-auto">
+<button class="md:hidden" id="menu-toggle">
+<span class="material-symbols-outlined text-primary">menu</span>
+</button>
+<div class="font-headline-lg text-headline-lg-mobile tracking-widest text-primary dark:text-on-surface uppercase eb-garamond">
+                LUXORA FASHION
+            </div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary scale-100 active:scale-95 transition-transform">search</span>
+<span class="material-symbols-outlined text-primary scale-100 active:scale-95 transition-transform">favorite</span>
+<span class="material-symbols-outlined text-primary scale-100 active:scale-95 transition-transform">shopping_bag</span>
+</div>
+</div>
+<!-- Horizontal Nav Categories for Mobile -->
+<div class="flex overflow-x-auto no-scrollbar px-5 pb-3 space-x-6">
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary border-b border-primary pb-1 whitespace-nowrap" href="shop.html">NEW IN</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant whitespace-nowrap" href="shop.html">WOMEN</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant whitespace-nowrap" href="shop.html">MEN</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant whitespace-nowrap" href="shop.html">ACCESSORIES</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant whitespace-nowrap" href="shop.html">SHOES</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant whitespace-nowrap" href="shop.html">SALE</a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="w-full">
+<!-- Shop Header & Controls -->
+<section class="px-5 py-8 bg-surface-container-low">
+<h1 class="font-headline-lg text-headline-lg-mobile eb-garamond mb-2">New Season Arrivals</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Elevate your daily ensemble with our curated collection of luxury essentials.</p>
+<div class="flex items-center justify-between border-y border-outline-variant py-4">
+<button class="flex items-center space-x-2 font-label-md text-label-md uppercase tracking-widest" id="filter-btn">
+<span class="material-symbols-outlined text-sm">tune</span>
+<span>Filter &amp; Sort</span>
+</button>
+<div class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant">
+                    128 Items
+                </div>
+</div>
+</section>
+<!-- Product Grid (2 Columns for Mobile as requested) -->
+<section class="px-5 py-8 grid grid-cols-2 gap-x-4 gap-y-10">
+<!-- Product Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-3">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-resolution lifestyle photography of a woman wearing a minimalist oversized linen shirt in cream color, standing in a sun-drenched architectural space with soft shadows. The image has a high-contrast editorial fashion feel with a clean white and taupe palette, reflecting sophisticated luxury and timeless elegance." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/81A3EB64-59FF-473D-910F-2577A2B46F4B.jpg?v=1783893989"/>
+<div class="absolute top-2 left-2 bg-primary text-on-primary font-label-md text-[10px] px-2 py-0.5 tracking-widest uppercase">NEW</div>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Erotic fishnet</h3>
+<p class="font-body-md text-body-md font-bold mt-1">₹799.00</p>
+<div class="flex space-x-2 mt-2">
+<div class="w-3 h-3 rounded-full border border-outline bg-surface-container-low"></div>
+<div class="w-3 h-3 rounded-full border border-outline bg-secondary"></div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-3">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A studio fashion shot of a woman wearing a ribbed tank top in charcoal grey paired with beige tailored trousers. The lighting is soft and cinematic, highlighting the fabric texture against a neutral linen-colored background. The overall aesthetic is minimalist, elite, and calm, typical of a high-end fashion boutique website." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/CD7BF4CA-0D51-498C-8DD0-BCA519951175.jpg?v=1783110627"/>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Full body Transparent Stocking</h3>
+<p class="font-body-md text-body-md font-bold mt-1">₹749.00</p>
+<div class="flex space-x-2 mt-2">
+<div class="w-3 h-3 rounded-full border border-outline bg-on-surface"></div>
+<div class="w-3 h-3 rounded-full border border-outline bg-outline-variant"></div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-3">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant lifestyle photography of a light floral midi dress with a delicate print, hanging in a bright, modern interior with wide tracking and negative space. The image is crisp, utilizing a white and linen color foundation to evoke exclusivity and a boutique experience for luxury fashion shoppers." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/59077486-E5D1-4E5E-9AE9-701CDA830BB6.jpg?v=1781677344"/>
+<div class="absolute top-2 left-2 bg-primary text-on-primary font-label-md text-[10px] px-2 py-0.5 tracking-widest uppercase">SALE</div>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Shadow Queen</h3>
+<p class="font-body-md text-body-md font-bold mt-1 text-error">$189.00 <span class="line-through text-on-surface-variant font-normal ml-1">$240</span></p>
+</div>
+<!-- Product Card 4 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-3">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional studio shot of a tailored relaxed blazer in a sophisticated taupe color, worn by a model with a poised and quiet expression. The image features a rigid grid alignment, ample negative space, and a high-contrast foundation of blacks and whites, capturing a timeless luxury fashion brand personality." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/061177E0-7892-489F-B4CB-3086367434F3.jpg?v=1781677325"/>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Wifey After Dark Set</h3>
+<p class="font-body-md text-body-md font-bold mt-1">₹799.00</p>
+</div>
+<!-- Product Card 5 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-3">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of luxury white leather sneakers on a minimalist stone surface with deep shadows. The composition is artistic and editorial, with a focus on quality craftsmanship and premium materials. The lighting is high-key and modern, following an editorial minimalism aesthetic for a fashion masthead look." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/02433E9B-26D8-4A4F-936C-6467E5FE46C8.jpg?v=1781677324"/>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Cheetah Print Garter Set</h3>
+<p class="font-body-md text-body-md font-bold mt-1">₹799.00</p>
+</div>
+<!-- Product Card 6 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] bg-surface-container mb-3">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial fashion photography of a classic tan leather handbag with gold hardware, placed on a minimalist wooden chair. The scene is shot in a warm, organic palette of taupe and linen tones, creating an aspirational and calm mood. The image is sharp and high-resolution, highlighting the texture of the luxury accessory." src="https://cdn.shopify.com/s/files/1/0918/2619/2702/files/Screenshot2026-04-11000921.png?v=1781134879"/>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface-variant truncate">Cute Cherry Print nightsuit</h3>
+<p class="font-body-md text-body-md font-bold mt-1">₹999.00</p>
+</div>
+</section>
+<!-- Pagination / Load More -->
+<section class="px-5 py-10 flex flex-col items-center">
+<button class="w-full py-4 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-[0.2em] transition-all hover:bg-secondary active:scale-95">
+                Load More
+            </button>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant">Showing 6 of 128 items</p>
+</section>
+</main>
+<!-- Filter Drawer (Overlay) -->
+<div class="fixed inset-0 z-[60] invisible pointer-events-none transition-all duration-300" id="filter-drawer">
+<div class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300" id="filter-overlay"></div>
+<div class="absolute right-0 top-0 h-full w-[85%] bg-surface-bright shadow-2xl translate-x-full transition-transform duration-300 flex flex-col" id="filter-content">
+<div class="p-6 flex justify-between items-center border-b border-outline-variant">
+<h2 class="font-headline-lg text-headline-lg-mobile eb-garamond">Filter &amp; Sort</h2>
+<button id="close-filter">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto p-6 space-y-8">
+<!-- Sort -->
+<div>
+<h3 class="font-label-md text-label-md uppercase tracking-widest mb-4">Sort By</h3>
+<div class="space-y-3">
+<label class="flex items-center space-x-3">
+<input checked="" class="form-radio text-primary focus:ring-0 border-outline" name="sort" type="radio"/>
+<span class="font-body-md text-body-md">Newest First</span>
+</label>
+<label class="flex items-center space-x-3">
+<input class="form-radio text-primary focus:ring-0 border-outline" name="sort" type="radio"/>
+<span class="font-body-md text-body-md">Price: Low to High</span>
+</label>
+<label class="flex items-center space-x-3">
+<input class="form-radio text-primary focus:ring-0 border-outline" name="sort" type="radio"/>
+<span class="font-body-md text-body-md">Price: High to Low</span>
+</label>
+</div>
+</div>
+<!-- Categories -->
+<div>
+<h3 class="font-label-md text-label-md uppercase tracking-widest mb-4">Categories</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 border border-outline-variant font-label-md text-[10px] uppercase tracking-widest bg-primary text-on-primary">Dresses</button>
+<button class="px-4 py-2 border border-outline-variant font-label-md text-[10px] uppercase tracking-widest hover:border-primary transition-colors">Tops</button>
+<button class="px-4 py-2 border border-outline-variant font-label-md text-[10px] uppercase tracking-widest hover:border-primary transition-colors">Outerwear</button>
+<button class="px-4 py-2 border border-outline-variant font-label-md text-[10px] uppercase tracking-widest hover:border-primary transition-colors">Knitwear</button>
+<button class="px-4 py-2 border border-outline-variant font-label-md text-[10px] uppercase tracking-widest hover:border-primary transition-colors">Accessories</button>
+</div>
+</div>
+<!-- Color -->
+<div>
+<h3 class="font-label-md text-label-md uppercase tracking-widest mb-4">Color</h3>
+<div class="flex space-x-4">
+<div class="w-8 h-8 rounded-full bg-black border border-outline cursor-pointer ring-offset-2 ring-primary"></div>
+<div class="w-8 h-8 rounded-full bg-white border border-outline cursor-pointer"></div>
+<div class="w-8 h-8 rounded-full bg-[#D2B48C] border border-outline cursor-pointer"></div>
+<div class="w-8 h-8 rounded-full bg-[#556B2F] border border-outline cursor-pointer"></div>
+<div class="w-8 h-8 rounded-full bg-[#708090] border border-outline cursor-pointer"></div>
+</div>
+</div>
+<!-- Price Range -->
+<div>
+<h3 class="font-label-md text-label-md uppercase tracking-widest mb-4">Price Range</h3>
+<input class="w-full h-1 bg-surface-variant appearance-none cursor-pointer accent-primary" max="1000" min="0" step="10" type="range"/>
+<div class="flex justify-between mt-2 font-label-md text-label-md text-on-surface-variant">
+<span>$0</span>
+<span>$1,000</span>
+</div>
+</div>
+<!-- Size -->
+<div>
+<h3 class="font-label-md text-label-md uppercase tracking-widest mb-4">Size</h3>
+<div class="grid grid-cols-4 gap-2">
+<button class="py-2 border border-outline-variant font-label-md text-[11px] uppercase hover:bg-primary hover:text-on-primary transition-all">XS</button>
+<button class="py-2 border border-outline-variant font-label-md text-[11px] uppercase hover:bg-primary hover:text-on-primary transition-all">S</button>
+<button class="py-2 border border-outline-variant font-label-md text-[11px] uppercase hover:bg-primary hover:text-on-primary transition-all">M</button>
+<button class="py-2 border border-outline-variant font-label-md text-[11px] uppercase hover:bg-primary hover:text-on-primary transition-all">L</button>
+<button class="py-2 border border-outline-variant font-label-md text-[11px] uppercase hover:bg-primary hover:text-on-primary transition-all">XL</button>
+</div>
+</div>
+</div>
+<div class="p-6 border-t border-outline-variant grid grid-cols-2 gap-4">
+<button class="py-4 border border-primary font-label-md text-label-md uppercase tracking-widest" id="reset-filter">Clear All</button>
+<button class="py-4 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest" id="apply-filter">Apply</button>
+</div>
+</div>
+</div>
+<!-- Footer (Shared Component Type: Footer) -->
+<footer class="bg-surface-bright dark:bg-inverse-surface border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-5 py-12 max-w-container-max mx-auto">
+<div class="space-y-4">
+<div class="font-headline-lg text-headline-lg tracking-widest text-primary dark:text-inverse-primary eb-garamond">
+                    LUXORA FASHION
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant">Timeless aesthetics for the modern professional.</p>
+</div>
+<div class="grid grid-cols-2 gap-8 md:col-span-3">
+<div class="space-y-3">
+<h4 class="font-label-md text-label-md tracking-widest uppercase text-on-surface dark:text-inverse-on-surface">CUSTOMER SERVICE</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Store Locator</a></li>
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="font-label-md text-label-md tracking-widest uppercase text-on-surface dark:text-inverse-on-surface">LEGAL</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="about.html">Sustainability</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="px-5 py-6 border-t border-outline-variant/30 text-center">
+<p class="font-label-md text-[10px] tracking-widest uppercase text-on-surface-variant">
+                © 2024 LUXORA FASHION. ALL RIGHTS RESERVED.
+            </p>
+</div>
+</footer>
+<script>
+        const filterBtn = document.getElementById('filter-btn');
+        const filterDrawer = document.getElementById('filter-drawer');
+        const filterOverlay = document.getElementById('filter-overlay');
+        const filterContent = document.getElementById('filter-content');
+        const closeFilter = document.getElementById('close-filter');
+        const applyFilter = document.getElementById('apply-filter');
+
+        function openDrawer() {
+            filterDrawer.classList.remove('invisible');
+            filterDrawer.classList.add('pointer-events-auto');
+            setTimeout(() => {
+                filterOverlay.classList.replace('opacity-0', 'opacity-100');
+                filterContent.classList.replace('translate-x-full', 'translate-x-0');
+            }, 10);
+        }
+
+        function closeDrawer() {
+            filterOverlay.classList.replace('opacity-100', 'opacity-0');
+            filterContent.classList.replace('translate-x-0', 'translate-x-full');
+            setTimeout(() => {
+                filterDrawer.classList.add('invisible');
+                filterDrawer.classList.remove('pointer-events-auto');
+            }, 300);
+        }
+
+        filterBtn.addEventListener('click', openDrawer);
+        closeFilter.addEventListener('click', closeDrawer);
+        filterOverlay.addEventListener('click', closeDrawer);
+        applyFilter.addEventListener('click', closeDrawer);
+
+        // Simple scale effect on product cards click
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mousedown', () => card.style.transform = 'scale(0.98)');
+            card.addEventListener('mouseup', () => card.style.transform = 'scale(1)');
+            card.addEventListener('mouseleave', () => card.style.transform = 'scale(1)');
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body></html>

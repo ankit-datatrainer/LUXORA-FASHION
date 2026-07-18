@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | LUXORA FASHION</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Hanken+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fbf9f9",
+                        "inverse-primary": "#c6c6c6",
+                        "on-secondary-fixed": "#241a0f",
+                        "surface-variant": "#e4e2e2",
+                        "on-surface": "#1b1c1c",
+                        "secondary-fixed": "#f3dfce",
+                        "outline-variant": "#cfc4c5",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#4c4546",
+                        "tertiary": "#000000",
+                        "tertiary-fixed-dim": "#c8c6c3",
+                        "on-tertiary-fixed-variant": "#474745",
+                        "on-secondary-container": "#706254",
+                        "outline": "#7e7576",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f5f3f3",
+                        "on-secondary-fixed-variant": "#514438",
+                        "inverse-surface": "#303031",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#f3dfce",
+                        "surface-container-high": "#e9e8e7",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#efeded",
+                        "tertiary-container": "#1c1c1a",
+                        "secondary-fixed-dim": "#d6c3b3",
+                        "inverse-on-surface": "#f2f0f0",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed": "#e5e2df",
+                        "on-primary-container": "#848484",
+                        "surface-container-highest": "#e4e2e2",
+                        "primary-container": "#1b1b1b",
+                        "on-tertiary-fixed": "#1c1c1a",
+                        "background": "#fbf9f9",
+                        "secondary": "#6a5c4f",
+                        "error-container": "#ffdad6",
+                        "primary": "#000000",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary-container": "#858481",
+                        "on-error": "#ffffff",
+                        "on-background": "#1b1c1c",
+                        "surface-dim": "#dbdad9",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#474747",
+                        "error": "#ba1a1a",
+                        "surface": "#fbf9f9",
+                        "on-primary-fixed": "#1b1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "container-max": "1440px",
+                        "stack-sm": "8px",
+                        "section-gap": "80px",
+                        "margin-x": "40px",
+                        "stack-lg": "32px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk", "sans-serif"],
+                        "body-lg": ["Hanken Grotesk", "sans-serif"],
+                        "label-md": ["Hanken Grotesk", "sans-serif"],
+                        "headline-lg": ["EB Garamond", "serif"],
+                        "display-lg": ["EB Garamond", "serif"],
+                        "headline-lg-mobile": ["EB Garamond", "serif"],
+                        "headline-sm": ["Hanken Grotesk", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["15px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+
+
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-body-md text-body-md antialiased">
+<!-- Small TopAppBar (Announcement Bar) -->
+<div class="bg-primary dark:bg-tertiary-container flex justify-center items-center w-full py-2 z-50 fixed top-0">
+<span class="text-on-primary dark:text-on-tertiary-container font-label-md text-label-md tracking-[0.2em] uppercase">FREE SHIPPING ON ORDERS OVER $99</span>
+</div>
+<!-- Medium TopAppBar (Main Nav) -->
+<header class="bg-surface-bright dark:bg-surface border-b border-outline-variant dark:border-outline fixed top-8 w-full z-40">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-container-max mx-auto">
+<h1 class="font-headline-lg text-headline-lg tracking-widest text-primary dark:text-on-surface">LUXORA FASHION</h1>
+<div class="flex items-center gap-4">
+<button class="p-1 scale-100 active:scale-95 transition-transform"><span class="material-symbols-outlined">search</span></button>
+<button class="p-1 scale-100 active:scale-95 transition-transform"><span class="material-symbols-outlined">shopping_bag</span></button>
+<button class="md:hidden p-1" id="mobile-menu-toggle"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-section-gap px-6">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto text-center mb-stack-lg">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-on-surface-variant block mb-4">Get In Touch</span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6">Contact Us</h2>
+<p class="max-w-md mx-auto text-on-surface-variant font-body-md leading-relaxed">
+                Whether you have a question about sizing, shipping, or our sustainable materials, our team is here to assist you with bespoke service.
+            </p>
+</section>
+<!-- Mobile Stacked Content -->
+<div class="max-w-container-max mx-auto flex flex-col gap-12">
+<!-- Contact Details Grid -->
+<section class="grid grid-cols-1 gap-8 py-10 border-y border-outline-variant">
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined mb-2 text-primary">location_on</span>
+<h3 class="font-headline-sm text-headline-sm uppercase mb-2">Our Boutique</h3>
+<p class="text-on-surface-variant">721 Fifth Avenue<br/>New York, NY 10022</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined mb-2 text-primary">call</span>
+<h3 class="font-headline-sm text-headline-sm uppercase mb-2">Customer Care</h3>
+<p class="text-on-surface-variant">+1 (212) 555-0198<br/>Mon - Fri: 9am - 6pm EST</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined mb-2 text-primary">mail</span>
+<h3 class="font-headline-sm text-headline-sm uppercase mb-2">Email Us</h3>
+<p class="text-on-surface-variant">concierge@luxorafashion.com<br/>Response within 24 hours</p>
+</div>
+</section>
+<!-- Map Section -->
+<section class="w-full h-[300px] bg-surface-container overflow-hidden">
+<div class="w-full h-full grayscale opacity-80" data-alt="A minimalist, high-contrast digital map rendering of the Upper East Side in Manhattan, featuring clean lines and a grayscale aesthetic suitable for a luxury fashion brand website. The focus is on the area surrounding Fifth Avenue, with architectural outlines of iconic buildings subtly suggested." data-location="New York Fifth Avenue" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWzqJfCv3DPEDuI8yCPP4EeFmpwQpLszj0SQFI7Wy4pIJDl55sJg5QzuZL0ZLuZadVmsTz1SP32CXwSh1klNip2Q-QwiKrPvSfjIzv5cXxWR2MIioro5kbJhtcWTGlT2Xuau0wC5NVnqhwgvHkjmZArD8Auwd1hOrswk4FOHLc4tSSqX1DD_7esPcxqnGEGsypbSzKzIuoT2Ksw-T2GlL4t0zxF7iSAIPV9yW1IjJk2GcMLWkxvFPc')"></div>
+</section>
+<!-- Contact Form -->
+<section class="bg-surface-container-low p-8">
+<h3 class="font-headline-lg text-headline-lg-mobile text-primary mb-8 text-center">Send A Message</h3>
+<form class="flex flex-col gap-6" onsubmit="event.preventDefault(); alert('Message sent successfully.')">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md uppercase" for="name">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 font-body-md transition-colors" id="name" placeholder="Enter your name" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md uppercase" for="email">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 font-body-md transition-colors" id="email" placeholder="Enter your email" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md uppercase" for="subject">Subject</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 font-body-md transition-colors appearance-none" id="subject">
+<option>Order Inquiry</option>
+<option>Returns &amp; Exchanges</option>
+<option>Sizing Advice</option>
+<option>Other</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md uppercase" for="message">Message</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 font-body-md transition-colors resize-none" id="message" placeholder="How can we help you?" required="" rows="4"></textarea>
+</div>
+<button class="mt-4 w-full bg-primary text-on-primary py-5 font-label-md text-label-md uppercase tracking-widest hover:bg-secondary transition-colors active:scale-[0.98]" type="submit">
+                        Send Message
+                    </button>
+</form>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-bright dark:bg-inverse-surface border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-6 py-section-gap max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<h2 class="font-headline-lg text-headline-lg tracking-widest text-primary dark:text-inverse-primary">LUXORA</h2>
+<p class="text-on-surface-variant font-body-md">Curating elegance since 2024. Sustainably sourced, meticulously crafted fashion for the modern era.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md tracking-widest uppercase mb-4">Explore</h4>
+<ul class="flex flex-col gap-2 text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">New In</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Women</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Men</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Accessories</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md tracking-widest uppercase mb-4">Support</h4>
+<ul class="flex flex-col gap-2 text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="contact.html">Contact Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Store Locator</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md tracking-widest uppercase mb-4">Newsletter</h4>
+<p class="text-on-surface-variant mb-4">Join our community for exclusive early access.</p>
+<div class="flex border-b border-outline">
+<input class="bg-transparent border-none focus:ring-0 w-full py-2 font-label-md" placeholder="EMAIL" type="email"/>
+<button class="p-2"><span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="text-center py-8 border-t border-outline-variant">
+<p class="font-label-md text-[10px] tracking-widest text-on-surface-variant">© 2024 LUXORA FASHION. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- Simple Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-surface-bright z-[60] translate-x-full transition-transform duration-500" id="mobile-menu">
+<div class="flex justify-between items-center px-6 py-6 border-b border-outline-variant">
+<h2 class="font-headline-lg text-headline-lg tracking-widest">MENU</h2>
+<button id="mobile-menu-close"><span class="material-symbols-outlined text-3xl">close</span></button>
+</div>
+<nav class="flex flex-col p-6 gap-8 text-center mt-12">
+<a class="font-headline-lg text-headline-lg hover:text-secondary transition-colors" href="shop.html">NEW IN</a>
+<a class="font-headline-lg text-headline-lg hover:text-secondary transition-colors" href="shop.html">WOMEN</a>
+<a class="font-headline-lg text-headline-lg hover:text-secondary transition-colors" href="shop.html">MEN</a>
+<a class="font-headline-lg text-headline-lg hover:text-secondary transition-colors" href="shop.html">ACCESSORIES</a>
+<a class="font-headline-lg text-headline-lg hover:text-secondary transition-colors text-error" href="shop.html">SALE</a>
+</nav>
+</div>
+<script>
+        const toggle = document.getElementById('mobile-menu-toggle');
+        const close = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.remove('translate-x-full');
+        });
+
+        close.addEventListener('click', () => {
+            menu.classList.add('translate-x-full');
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body></html>

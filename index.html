@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUXORA FASHION | Editorial Minimalism</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fbf9f9",
+                        "inverse-primary": "#c6c6c6",
+                        "on-secondary-fixed": "#241a0f",
+                        "surface-variant": "#e4e2e2",
+                        "on-surface": "#1b1c1c",
+                        "secondary-fixed": "#f3dfce",
+                        "outline-variant": "#cfc4c5",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#4c4546",
+                        "tertiary": "#000000",
+                        "tertiary-fixed-dim": "#c8c6c3",
+                        "on-tertiary-fixed-variant": "#474745",
+                        "on-secondary-container": "#706254",
+                        "outline": "#7e7576",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f5f3f3",
+                        "on-secondary-fixed-variant": "#514438",
+                        "inverse-surface": "#303031",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#f3dfce",
+                        "surface-container-high": "#e9e8e7",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#efeded",
+                        "tertiary-container": "#1c1c1a",
+                        "secondary-fixed-dim": "#d6c3b3",
+                        "inverse-on-surface": "#f2f0f0",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed": "#e5e2df",
+                        "on-primary-container": "#848484",
+                        "surface-container-highest": "#e4e2e2",
+                        "primary-container": "#1b1b1b",
+                        "on-tertiary-fixed": "#1c1c1a",
+                        "background": "#fbf9f9",
+                        "secondary": "#6a5c4f",
+                        "error-container": "#ffdad6",
+                        "primary": "#000000",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary-container": "#858481",
+                        "on-error": "#ffffff",
+                        "on-background": "#1b1c1c",
+                        "surface-dim": "#dbdad9",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#474747",
+                        "error": "#ba1a1a",
+                        "surface": "#fbf9f9",
+                        "on-primary-fixed": "#1b1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0rem",
+                        "lg": "0rem",
+                        "xl": "0rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "container-max": "1440px",
+                        "stack-sm": "8px",
+                        "section-gap": "80px",
+                        "margin-x": "40px",
+                        "stack-lg": "32px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-md": ["Hanken Grotesk"],
+                        "headline-lg": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "headline-sm": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["15px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+
+
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopAppBar Small (Announcement Bar) -->
+<header class="bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container font-label-md text-label-md tracking-[0.2em] uppercase flex justify-center items-center w-full py-2 docked full-width top-0 z-[60]">
+        FREE SHIPPING ON ORDERS OVER $99
+    </header>
+<!-- TopAppBar Medium (Navigation) -->
+<nav class="bg-surface-bright dark:bg-surface sticky top-[32px] z-50 border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center w-full px-5 py-4 max-w-container-max mx-auto">
+<!-- Hamburger for Mobile -->
+<button class="md:hidden p-2 active:scale-95 transition-transform" onclick="toggleMenu()">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Brand Logo -->
+<a class="font-headline-lg text-headline-lg tracking-widest text-primary dark:text-on-surface uppercase" href="index.html">LUXORA FASHION</a>
+<!-- Desktop Links -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary border-b border-primary pb-1" href="shop.html">NEW IN</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="shop.html">WOMEN</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="shop.html">MEN</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300" href="shop.html">ACCESSORIES</a>
+</div>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-4">
+<button class="hidden md:block material-symbols-outlined hover:text-secondary transition-colors">search</button>
+<button class="material-symbols-outlined hover:text-secondary transition-colors">person</button>
+<button class="hidden md:block material-symbols-outlined hover:text-secondary transition-colors">favorite</button>
+<button class="material-symbols-outlined hover:text-secondary transition-colors">shopping_bag</button>
+</div>
+</div>
+</nav>
+<!-- Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-surface-bright z-[70] translate-x-full transition-transform duration-500 md:hidden" id="mobile-menu">
+<div class="p-6 flex flex-col h-full">
+<div class="flex justify-between items-center mb-12">
+<span class="font-headline-lg text-headline-lg tracking-widest uppercase">LUXORA</span>
+<button class="material-symbols-outlined" onclick="toggleMenu()">close</button>
+</div>
+<div class="flex flex-col gap-8">
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">NEW IN</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">WOMEN</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">MEN</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">ACCESSORIES</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4" href="shop.html">SHOES</a>
+<a class="font-headline-lg text-[24px] uppercase border-b border-outline-variant pb-4 text-error" href="shop.html">SALE</a>
+</div>
+<div class="mt-auto pt-12">
+<p class="font-label-md text-label-md uppercase tracking-widest opacity-60 mb-4">Support</p>
+<a class="block py-2" href="contact.html">Store Locator</a>
+<a class="block py-2" href="contact.html">Contact Us</a>
+</div>
+</div>
+</div>
+<main class="max-w-container-max mx-auto overflow-x-hidden">
+<!-- Hero Section -->
+<section class="relative min-h-[618px] md:min-h-[751px] flex items-center bg-surface-container-low">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-[center_top_20%] md:bg-right" data-alt="A professional fashion editorial portrait of a woman in a tailored beige linen blazer standing against a minimalist warm-toned studio background with soft architectural shadows. The lighting is bright and airy, reflecting a luxury high-end fashion aesthetic with neutral earth tones. Her expression is poised and sophisticated, embodying the spring-summer collection's quiet luxury vibe." style="background-image: url('https://cdn.shopify.com/s/files/1/0918/2619/2702/files/81A3EB64-59FF-473D-910F-2577A2B46F4B.jpg?v=1783893989')"></div>
+<div class="absolute inset-0 hero-gradient md:hidden"></div>
+</div>
+<div class="relative z-10 px-5 md:px-margin-x w-full">
+<div class="max-w-xl">
+<p class="font-label-md text-label-md uppercase tracking-[0.3em] mb-4 text-on-surface-variant">NEW SEASON</p>
+<h1 class="font-display-lg text-[40px] md:text-display-lg uppercase leading-tight mb-6">
+                        SPRING / SUMMER <br/>
+                        COLLECTION
+                    </h1>
+<div class="h-[1px] w-12 bg-primary mb-6"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-sm mb-10">
+                        Elevate your style with the latest trends and timeless essentials.
+                    </p>
+<button class="bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest px-10 py-5 hover:bg-secondary transition-colors duration-300 active:scale-95">
+                        SHOP NOW
+                    </button>
+</div>
+</div>
+</section>
+<!-- Quick Categories -->
+<section class="px-5 md:px-margin-x py-section-gap">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-gutter">
+<!-- Women -->
+<div class="relative group cursor-pointer overflow-hidden aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A close-up fashion shot of a woman wearing a minimalist neutral-toned silk shirt, shot in bright natural light with soft shadows. The overall aesthetic is editorial and luxury, focusing on high-quality fabric and clean lines. Part of a boutique fashion website's category navigation for women's wear." style="background-image: url('https://cdn.shopify.com/s/files/1/0918/2619/2702/files/CD7BF4CA-0D51-498C-8DD0-BCA519951175.jpg?v=1783110627')"></div>
+<div class="absolute inset-0 bg-black/10 transition-opacity group-hover:opacity-30"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-on-primary">
+<span class="font-headline-lg text-headline-lg uppercase tracking-widest mb-2">WOMEN</span>
+<span class="font-label-md text-[10px] tracking-widest border-b border-on-primary pb-0.5 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Shop Now</span>
+</div>
+</div>
+<!-- Men -->
+<div class="relative group cursor-pointer overflow-hidden aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A portrait of a male model in a dark brown leather jacket and classic white t-shirt, looking sideways with a confident, calm expression. The background is a minimalist concrete texture in soft beige tones. The image represents the menswear collection for a luxury fashion brand." style="background-image: url('https://cdn.shopify.com/s/files/1/0918/2619/2702/files/59077486-E5D1-4E5E-9AE9-701CDA830BB6.jpg?v=1781677344')"></div>
+<div class="absolute inset-0 bg-black/10 transition-opacity group-hover:opacity-30"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-on-primary">
+<span class="font-headline-lg text-headline-lg uppercase tracking-widest mb-2">MEN</span>
+<span class="font-label-md text-[10px] tracking-widest border-b border-on-primary pb-0.5 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Shop Now</span>
+</div>
+</div>
+<!-- Bags -->
+<div class="relative group cursor-pointer overflow-hidden aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photography of a beige luxury leather handbag with gold chain detailing, hanging against a textured neutral wall. Sophisticated soft lighting creates elegant shadows, highlighting the premium craftsmanship of the accessory." style="background-image: url('https://cdn.shopify.com/s/files/1/0918/2619/2702/files/061177E0-7892-489F-B4CB-3086367434F3.jpg?v=1781677325')"></div>
+<div class="absolute inset-0 bg-black/10 transition-opacity group-hover:opacity-30"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-on-primary">
+<span class="font-headline-lg text-headline-lg uppercase tracking-widest mb-2">BAGS</span>
+<span class="font-label-md text-[10px] tracking-widest border-b border-on-primary pb-0.5 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Shop Now</span>
+</div>
+</div>
+<!-- Shoes -->
+<div class="relative group cursor-pointer overflow-hidden aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist product photography of clean white leather sneakers on a pair of feet, captured from a low angle against a neutral background. The lighting is crisp and modern, focusing on the sleek silhouette of the luxury footwear." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAe42qa-mp_5JgjRL_kcv-DaqCt3awuCadeGnZFQZ-NtIT5tnehGop2tUcB8ss_XRDcpYsamasUcCEBKiN6k3S8I-2EBuKosge7qKSfHx-jyvBJlCnaDGdUXsM2fdagSUOzG60hqbqQL60j70G4qLIv9HxfvUpNr4qyFmpHsvir7xWZH7DWXJhEg3JHBmnfl_U0hKjPodonNBxW5Acmqj3GEHNpXFLXGLlI0nNgOWutbjasBVlgGdoE')"></div>
+<div class="absolute inset-0 bg-black/10 transition-opacity group-hover:opacity-30"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-on-primary">
+<span class="font-headline-lg text-headline-lg uppercase tracking-widest mb-2">SHOES</span>
+<span class="font-label-md text-[10px] tracking-widest border-b border-on-primary pb-0.5 opacity-0 group-hover:opacity-100 transition-opacity uppercase">Shop Now</span>
+</div>
+</div>
+</div>
+</section>
+<!-- New Arrivals Carousel -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="px-5 md:px-margin-x">
+<div class="flex justify-between items-end mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-widest">NEW ARRIVALS</h2>
+<div class="flex gap-4">
+<button class="w-10 h-10 flex items-center justify-center border border-outline hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Product Grid -->
+<div class="flex gap-gutter overflow-x-auto hide-scroll snap-x pb-8">
+<!-- Product 1 -->
+<div class="min-w-[280px] md:min-w-[calc(25%-18px)] snap-start group">
+<div class="relative aspect-[3/4] mb-4 overflow-hidden bg-surface-bright">
+<span class="absolute top-4 left-4 z-10 bg-primary text-on-primary font-label-md text-[10px] px-2 py-1 uppercase">NEW</span>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A female model wearing an oversized cream-colored linen shirt tucked into beige trousers. The lighting is soft and natural, emphasizing the texture of the linen. The overall style is minimalist and high-end editorial." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBhA01vsBLrgzVk4QeCsaqfzDTRzGkWUM2rWIeT0kHTwMSY3aeLrVYLuLMBIo33a7SO8hdozNBCKL1lOFSyDYUQNIZU_UuKowCm_8Tg-ujdCcH6mRgzHF1FTGtpaebmwuYeAcOw8CXvQiGrJhWBnRQzoStXSfAXkxDkCOi7Eft8M4gn_ORgZJ9T-znE2ai9H-waDhFJZ22mE96WI_UVgJUrdoch_z5dLzQVAJpP3La0tmrfPd4aW4oo')"></div>
+<button class="absolute bottom-0 left-0 right-0 bg-primary/90 text-on-primary py-4 font-label-md uppercase tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300">Quick Add</button>
+</div>
+<div class="text-center">
+<h3 class="font-body-md text-body-md text-on-surface-variant mb-1">Erotic fishnet</h3>
+<p class="font-body-md font-bold text-on-surface">₹799.00</p>
+<div class="flex justify-center gap-2 mt-2">
+<span class="w-3 h-3 rounded-full bg-[#DCC6B3] border border-outline-variant"></span>
+<span class="w-3 h-3 rounded-full bg-[#3D3D3D]"></span>
+<span class="w-3 h-3 rounded-full bg-[#F5F5F5] border border-outline-variant"></span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="min-w-[280px] md:min-w-[calc(25%-18px)] snap-start group">
+<div class="relative aspect-[3/4] mb-4 overflow-hidden bg-surface-bright">
+<span class="absolute top-4 left-4 z-10 bg-primary text-on-primary font-label-md text-[10px] px-2 py-1 uppercase">NEW</span>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A studio photograph of a model in a ribbed black tank top paired with white linen pants. The shot is high-contrast and minimalist, highlighting the simple yet luxurious everyday essential." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvw-vUQ7GqC5qwRqYLoaCWXs-YRDj5Sg_BJt2SJnLsmlyQAkOYZm7H9_VoeWUy1arVjnuiX20E43TwGCEP-EUZehm6m8dk5B1KU9cSBx5yXiFSB4q6sDD3apIOy1gTJzVRnoj6GGauiegTNvg9f5ijrQ9KzLAgnsrR-uB7Ric5MbhU4ZiZhmK0pWyckKYnSBtI_D5LS8sFv3tdlyDqPtvPSQLUnJIXFCBvbvAoXgcfkucaVc3NhTJ8')"></div>
+<button class="absolute bottom-0 left-0 right-0 bg-primary/90 text-on-primary py-4 font-label-md uppercase tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300">Quick Add</button>
+</div>
+<div class="text-center">
+<h3 class="font-body-md text-body-md text-on-surface-variant mb-1">Full body Transparent Stocking</h3>
+<p class="font-body-md font-bold text-on-surface">₹749.00</p>
+<div class="flex justify-center gap-2 mt-2">
+<span class="w-3 h-3 rounded-full bg-[#1b1b1b]"></span>
+<span class="w-3 h-3 rounded-full bg-[#F5F3F3] border border-outline-variant"></span>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="min-w-[280px] md:min-w-[calc(25%-18px)] snap-start group">
+<div class="relative aspect-[3/4] mb-4 overflow-hidden bg-surface-bright">
+<span class="absolute top-4 left-4 z-10 bg-primary text-on-primary font-label-md text-[10px] px-2 py-1 uppercase">NEW</span>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A soft-focus editorial of a woman in a floral print midi dress made of lightweight silk. The background is a soft beige wall with dappled sunlight, creating a romantic and ethereal mood for the summer collection." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQ7ORO1F1vih71o_jagX68mIgD3EwdHSrFOxQ_uJ2g4Ic1bU0GdiLJvlnFX4_I97Icr855YtCfGJ9PPxTeoZ1OCje0WH0MwkMDmc7oyaeFLKzHFbYBuDXIenW9tcgFDGwB7aBM6NOX25H3_qBA0anFBwhpC3R1eroPqRThpZjJCVtmObzeRoKUOAX-91ona_F-ym2HLSkQw4oBXhQtrJR9ajGaq41zuni79u7PDHBmv-Mgt7ZhLF54')"></div>
+<button class="absolute bottom-0 left-0 right-0 bg-primary/90 text-on-primary py-4 font-label-md uppercase tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300">Quick Add</button>
+</div>
+<div class="text-center">
+<h3 class="font-body-md text-body-md text-on-surface-variant mb-1">Shadow Queen</h3>
+<p class="font-body-md font-bold text-on-surface">₹799.00</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="min-w-[280px] md:min-w-[calc(25%-18px)] snap-start group">
+<div class="relative aspect-[3/4] mb-4 overflow-hidden bg-surface-bright">
+<span class="absolute top-4 left-4 z-10 bg-primary text-on-primary font-label-md text-[10px] px-2 py-1 uppercase">NEW</span>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A professional studio shot of a tailored beige blazer, impeccably fitted on a model. The lighting is crisp, emphasizing the structure and quality of the garment. Clean minimalist luxury aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTcRqsXJT_ElkM1BlwpCK2-OMyMJI7yM_ux1CM7tfDXE_HW9JcUXlPhmZUMYMlTBUha9dHz9vCiGdZ926OK_xj7sLi2Bok8c1qTzJp_PyU--pOU0QKkl8oi9Cof4cJ4KLPGM8hnaos4EJ-D--Ak6JuR0yNXl0PBfxrpEf4pc8bkPKV3sXmT-JycJTjoryMiX6k4xZ8XtUk6u1IjJuZZhKOn-JJ3XdNbHl219CoxMrr8p1RKMy1tLwM')"></div>
+<button class="absolute bottom-0 left-0 right-0 bg-primary/90 text-on-primary py-4 font-label-md uppercase tracking-widest translate-y-full group-hover:translate-y-0 transition-transform duration-300">Quick Add</button>
+</div>
+<div class="text-center">
+<h3 class="font-body-md text-body-md text-on-surface-variant mb-1">Wifey After Dark Set</h3>
+<p class="font-body-md font-bold text-on-surface">₹799.00</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Icons Bar -->
+<section class="bg-surface-container-high py-12 px-5">
+<div class="max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[32px] mb-3 font-light">local_shipping</span>
+<h4 class="font-headline-sm text-headline-sm uppercase mb-1">Free Shipping</h4>
+<p class="font-label-md opacity-60">On orders over $99</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[32px] mb-3 font-light">history</span>
+<h4 class="font-headline-sm text-headline-sm uppercase mb-1">Easy Returns</h4>
+<p class="font-label-md opacity-60">30 days return policy</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[32px] mb-3 font-light">verified_user</span>
+<h4 class="font-headline-sm text-headline-sm uppercase mb-1">Secure Payment</h4>
+<p class="font-label-md opacity-60">100% secure payment</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-[32px] mb-3 font-light">support_agent</span>
+<h4 class="font-headline-sm text-headline-sm uppercase mb-1">24/7 Support</h4>
+<p class="font-label-md opacity-60">Dedicated support</p>
+</div>
+</div>
+</section>
+<!-- Popular Collection Bento -->
+<section class="px-5 md:px-margin-x py-section-gap">
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-widest text-center mb-stack-lg">POPULAR COLLECTION</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-[1200px] md:h-[800px]">
+<div class="md:col-span-1 md:row-span-2 relative group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Model in a minimalist white linen set, posed against a textured tan background. Warm morning light creates soft long shadows. Editorial fashion aesthetic with focus on 'Minimal' style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-JZCa1kbNKrybJ7i20jXmP790CT2cSWOW0QCt6dYfoRpav9GVqxgTWOw6Aao4BLdbnauyM4TTklduvlnJf7tzsusFvGXZO205lznm44M9nkt5pCZHdZqB1dR3-eNetYfzt7uUtIx4S_xvEERyjzFMjBMNbS6kot5A-vytFZR2M9rN-8v667Qky8TxPaKko5E1nH4SMyI99mDSLA8nSBsarx8MP69VFzVfNth0guRT1nqE_QNMmuCw')"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+<div class="absolute bottom-10 left-10 text-on-primary">
+<p class="font-headline-lg text-[24px] uppercase tracking-widest mb-2">MINIMAL</p>
+<span class="font-label-md border-b border-on-primary pb-1 uppercase tracking-widest">Shop Now</span>
+</div>
+</div>
+<div class="md:col-span-2 md:row-span-1 relative group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A stunning evening shot of a model in a flowing black silk dress. Soft warm city lights in the background create a sophisticated 'Elegant' mood for the luxury evening wear collection." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyRLV1ugkkpMGkftUF_8Tfe0-pMOuDCAYcDIRGsG7NHepH_71KasG-URMlkKgI6GPJri69f8009Vx8fuN0C0XDVyKumaKKTY8cw42d8FUn2jJGlZDQlpwXEAVg877cf7eD3UOYWvP0LcCoBVjQQcH-qqTJihM0zrmzLmk7sT-mLuNkqRf9EC8l0f_HdqHKC9IENODZgqbZkGZyhEks97PkSKzO_ap1yV8D4_aEX0N0EqGWgGJMWf1b')"></div>
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute bottom-10 left-10 text-on-primary">
+<p class="font-headline-lg text-[24px] uppercase tracking-widest mb-2">ELEGANT</p>
+<span class="font-label-md border-b border-on-primary pb-1 uppercase tracking-widest">Shop Now</span>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A lifestyle fashion image of a woman in a high-quality knit sweater and jeans, enjoying coffee in a chic outdoor cafe. 'Casual' yet refined luxury fashion." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBhcIymaL_YFa6hrC2t39NygrkLLZ_l5lKC1o9G2Q_XCv8v9HwokcU_VzDdf5aPlRc1zFuq2I9c1gk1gqH9owLZQgpfwv9gg4nIZb-mzKC-f2I_eKU39n0FpXOuK73DiDB9TlOVBPENCo8WqIcLe0EdvhY4rxarXiU7jLFxxvgJNW48SUa8EBCzLrAmy5M-gxxD6eZDNd9XLSaW0jMLhK1lD6XiDYmihIH0BigILCjH-oyQCCfhON-Y')"></div>
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute bottom-10 left-10 text-on-primary">
+<p class="font-headline-lg text-[24px] uppercase tracking-widest mb-2">CASUAL</p>
+<span class="font-label-md border-b border-on-primary pb-1 uppercase tracking-widest">Shop Now</span>
+</div>
+</div>
+<div class="md:col-span-3 md:row-span-1 relative group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Flat lay of premium fashion accessories including leather sunglasses, a gold watch, and a brown leather belt on a clean white surface. High-contrast studio lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfT4gJEIqcVGDlUo2dMxLSOmcIfTee4jKdJBGDNtVv5b5CSp7Du3uc82lA7DxMu7Wu4kjN5fH3gJPOTZFv3UBG6-T5r6QmfW2bt3ux51NjpYUzKPxyoPw3KLqw6VfQtgPYt6KTJLQP9IFjHC4SrS2vJ5cb9utBPuF8RUmjFN0lk-WjS-bO7_5zX-q6xTfDaBFbIwaPZlPXa3z4HbVsIrstovkgxNJDmPXU42RXnemLch-NgUsM20hl')"></div>
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute bottom-10 left-10 text-on-primary">
+<p class="font-headline-lg text-[24px] uppercase tracking-widest mb-2">ACCESSORIES</p>
+<span class="font-label-md border-b border-on-primary pb-1 uppercase tracking-widest">Shop Now</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-bright dark:bg-inverse-surface text-on-surface dark:text-inverse-on-surface border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-5 md:px-margin-x py-section-gap max-w-container-max mx-auto">
+<div>
+<a class="font-headline-lg text-headline-lg tracking-widest text-primary dark:text-inverse-primary uppercase block mb-6" href="index.html">LUXORA</a>
+<p class="font-body-md text-on-surface-variant max-w-xs mb-6">
+                    Redefining luxury through the lens of minimalism and timeless elegance.
+                </p>
+<div class="flex gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">public</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">share</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">alternate_email</button>
+</div>
+</div>
+<div>
+<h5 class="font-label-md text-label-md tracking-widest uppercase mb-6">Shop</h5>
+<ul class="flex flex-col gap-3 font-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="shop.html">New Arrivals</a></li>
+<li><a class="hover:text-primary transition-colors" href="shop.html">Best Sellers</a></li>
+<li><a class="hover:text-primary transition-colors" href="shop.html">Women's Collection</a></li>
+<li><a class="hover:text-primary transition-colors" href="shop.html">Men's Collection</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md tracking-widest uppercase mb-6">About</h5>
+<ul class="flex flex-col gap-3 font-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="about.html">Our Story</a></li>
+<li><a class="hover:text-primary transition-colors" href="about.html">Sustainability</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Store Locator</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-label-md tracking-widest uppercase mb-6">Newsletter</h5>
+<p class="font-body-md text-on-surface-variant mb-4">Subscribe to receive updates and exclusive offers.</p>
+<div class="flex border-b border-outline pb-2">
+<input class="bg-transparent border-none focus:ring-0 w-full placeholder:text-on-surface-variant/40" placeholder="Email Address" type="email"/>
+<button class="material-symbols-outlined">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="px-5 md:px-margin-x py-8 border-t border-outline-variant dark:border-outline max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-md text-[10px] tracking-widest opacity-60">© 2024 LUXORA FASHION. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-6">
+<a class="font-label-md text-[10px] tracking-widest opacity-60 hover:opacity-100 transition-opacity" href="#">PRIVACY POLICY</a>
+<a class="font-label-md text-[10px] tracking-widest opacity-60 hover:opacity-100 transition-opacity" href="#">TERMS OF SERVICE</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar for Mobile -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-surface-bright/95 backdrop-blur-md border-t border-outline-variant/30 flex justify-around items-center py-3 z-[60] editorial-shadow">
+<a class="flex flex-col items-center gap-1 text-primary" href="index.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-md text-[10px] uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="shop.html">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label-md text-[10px] uppercase">Shop</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-label-md text-[10px] uppercase">Wishlist</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-label-md text-[10px] uppercase">Cart</span>
+</a>
+</nav>
+
+    <script src="js/main.js"></script>
+</body></html>
