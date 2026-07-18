@@ -1,21 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUXORA FASHION | Product</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #FAFAFA; }
-        .font-headline { font-family: 'Cormorant Garamond', serif; }
-    </style>
-</head>
-<body class="overflow-x-hidden">
 
-    <!-- Header will be dynamically injected here for now, or we can copy the index header -->
-    <!-- Sticky Header Container -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUXORA FASHION | Editorial Minimalism</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fbf9f9",
+                        "inverse-primary": "#c6c6c6",
+                        "on-secondary-fixed": "#241a0f",
+                        "surface-variant": "#e4e2e2",
+                        "on-surface": "#1b1c1c",
+                        "secondary-fixed": "#f3dfce",
+                        "outline-variant": "#cfc4c5",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#4c4546",
+                        "tertiary": "#000000",
+                        "tertiary-fixed-dim": "#c8c6c3",
+                        "on-tertiary-fixed-variant": "#474745",
+                        "on-secondary-container": "#706254",
+                        "outline": "#7e7576",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f5f3f3",
+                        "on-secondary-fixed-variant": "#514438",
+                        "inverse-surface": "#303031",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#f3dfce",
+                        "surface-container-high": "#e9e8e7",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#efeded",
+                        "tertiary-container": "#1c1c1a",
+                        "secondary-fixed-dim": "#d6c3b3",
+                        "inverse-on-surface": "#f2f0f0",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed": "#e5e2df",
+                        "on-primary-container": "#848484",
+                        "surface-container-highest": "#e4e2e2",
+                        "primary-container": "#1b1b1b",
+                        "on-tertiary-fixed": "#1c1c1a",
+                        "background": "#fbf9f9",
+                        "secondary": "#6a5c4f",
+                        "error-container": "#ffdad6",
+                        "primary": "#000000",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary-container": "#858481",
+                        "on-error": "#ffffff",
+                        "on-background": "#1b1c1c",
+                        "surface-dim": "#dbdad9",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#474747",
+                        "error": "#ba1a1a",
+                        "surface": "#fbf9f9",
+                        "on-primary-fixed": "#1b1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0rem",
+                        "lg": "0rem",
+                        "xl": "0rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "container-max": "1440px",
+                        "stack-sm": "8px",
+                        "section-gap": "80px",
+                        "margin-x": "40px",
+                        "stack-lg": "32px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-md": ["Hanken Grotesk"],
+                        "headline-lg": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "headline-sm": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["15px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+
+
+      <link rel="stylesheet" href="css/style.css">
+    <link rel='icon' type='image/svg+xml' href='favicon.svg'>
+
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+
+<!-- Sticky Header Container -->
 <div class="sticky top-0 z-[60] w-full flex flex-col">
     <!-- TopAppBar Small (Announcement Bar) -->
     <header class="bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container font-label-md text-[10px] md:text-label-md tracking-wider md:tracking-[0.2em] uppercase flex justify-center items-center text-center w-full py-1.5 px-2 leading-tight">
@@ -71,6 +164,7 @@
 <a class="block py-2" href="contact.html">Contact Us</a>
 </div>
 </div>
+</div>
 
     <main class="max-w-7xl mx-auto px-5 py-12 md:py-24">
         <div class="flex flex-col md:flex-row gap-12 lg:gap-24">
@@ -90,10 +184,10 @@
                     <span id="breadcrumb-name" class="text-black">Product</span>
                 </nav>
 
-                <h1 id="product-name" class="font-headline text-4xl md:text-5xl mb-4">Product Name</h1>
-                <p id="product-price" class="text-xl mb-8">Rs. 0.00</p>
+                <h1 id="product-name" class="font-headline-lg text-4xl md:text-5xl mb-4">Product Name</h1>
+                <p id="product-price" class="text-xl mb-8 text-on-surface-variant">Rs. 0.00</p>
                 
-                <p class="text-gray-600 mb-10 leading-relaxed max-w-lg">
+                <p class="text-on-surface-variant mb-10 leading-relaxed max-w-lg font-body-md">
                     Experience unparalleled luxury with this exquisite piece. Designed with meticulous attention to detail, 
                     it offers a perfect blend of comfort and provocative elegance. A must-have addition to your intimate wardrobe.
                 </p>
@@ -101,28 +195,41 @@
                 <!-- Size Selector -->
                 <div class="mb-8">
                     <div class="flex justify-between items-center mb-3">
-                        <label class="text-sm uppercase tracking-widest font-bold">Size</label>
-                        <a href="#" class="text-xs text-gray-500 underline">Size Guide</a>
+                        <label class="text-sm uppercase tracking-widest font-bold font-label-md">Size</label>
+                        <a href="#" class="text-xs text-on-surface-variant underline font-label-md">Size Guide</a>
                     </div>
                     <div class="flex gap-3" id="size-selector">
-                        <button class="size-btn w-12 h-12 border border-gray-300 flex items-center justify-center hover:border-black transition-colors focus:bg-black focus:text-white" data-size="S">S</button>
-                        <button class="size-btn w-12 h-12 border border-gray-300 flex items-center justify-center hover:border-black transition-colors focus:bg-black focus:text-white" data-size="M">M</button>
-                        <button class="size-btn w-12 h-12 border border-gray-300 flex items-center justify-center hover:border-black transition-colors focus:bg-black focus:text-white" data-size="L">L</button>
-                        <button class="size-btn w-12 h-12 border border-gray-300 flex items-center justify-center hover:border-black transition-colors focus:bg-black focus:text-white" data-size="XL">XL</button>
+                        <button class="size-btn w-12 h-12 border border-outline-variant flex items-center justify-center hover:border-primary transition-colors text-sm font-label-md" data-size="S">S</button>
+                        <button class="size-btn w-12 h-12 border border-outline-variant flex items-center justify-center hover:border-primary transition-colors text-sm font-label-md" data-size="M">M</button>
+                        <button class="size-btn w-12 h-12 border border-outline-variant flex items-center justify-center hover:border-primary transition-colors text-sm font-label-md" data-size="L">L</button>
+                        <button class="size-btn w-12 h-12 border border-outline-variant flex items-center justify-center hover:border-primary transition-colors text-sm font-label-md" data-size="XL">XL</button>
+                    </div>
+                </div>
+
+                <!-- Quantity Selector -->
+                <div class="mb-8">
+                    <label class="text-sm uppercase tracking-widest font-bold font-label-md mb-3 block">Quantity</label>
+                    <div class="flex items-center border border-outline-variant w-fit">
+                        <button id="qty-minus" class="px-4 py-3 hover:bg-surface-container transition-colors font-body-md">-</button>
+                        <span id="qty-value" class="px-6 py-3 font-body-md text-sm border-x border-outline-variant">1</span>
+                        <button id="qty-plus" class="px-4 py-3 hover:bg-surface-container transition-colors font-body-md">+</button>
                     </div>
                 </div>
 
                 <!-- Add to Cart -->
-                <button id="add-to-cart-btn" class="w-full bg-black text-white py-5 uppercase tracking-widest hover:bg-gray-800 transition-colors mb-6">
+                <button id="add-to-cart-btn" class="w-full bg-primary text-on-primary py-5 uppercase tracking-[0.2em] hover:bg-secondary transition-colors mb-6 font-label-md text-label-md active:scale-95">
                     Add to Cart
                 </button>
 
-                <div class="border-t border-gray-200 pt-6 mt-6">
-                    <div class="flex items-center gap-3 text-sm text-gray-600 mb-2">
+                <div class="border-t border-outline-variant pt-6 mt-2">
+                    <div class="flex items-center gap-3 text-sm text-on-surface-variant mb-3 font-body-md">
                         <span class="material-symbols-outlined text-lg">local_shipping</span> Free shipping on orders over Rs. 3000
                     </div>
-                    <div class="flex items-center gap-3 text-sm text-gray-600">
+                    <div class="flex items-center gap-3 text-sm text-on-surface-variant mb-3 font-body-md">
                         <span class="material-symbols-outlined text-lg">sync</span> 14-day return policy
+                    </div>
+                    <div class="flex items-center gap-3 text-sm text-on-surface-variant font-body-md">
+                        <span class="material-symbols-outlined text-lg">verified_user</span> 100% secure payment
                     </div>
                 </div>
             </div>
@@ -180,6 +287,32 @@
 </div>
 </footer>
 
+    <!-- Cart Drawer (Overlay) -->
+    <div class="fixed inset-0 z-[100] invisible pointer-events-none transition-all duration-300" id="cart-drawer-container">
+        <div class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300" id="cart-overlay"></div>
+        <div class="absolute right-0 top-0 h-full w-full md:w-[400px] bg-surface-bright shadow-2xl translate-x-full transition-transform duration-300 flex flex-col" id="cart-drawer-panel">
+            <div class="p-6 flex justify-between items-center border-b border-outline-variant">
+                <h2 class="font-headline-lg text-2xl uppercase tracking-widest">Shopping Bag</h2>
+                <button id="close-cart" class="active:scale-90 transition-transform">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="flex-1 overflow-y-auto p-6 space-y-6" id="cart-items-container">
+                <!-- Items injected by JS -->
+            </div>
+            <div class="p-6 border-t border-outline-variant bg-surface-container-low">
+                <div class="flex justify-between items-center mb-6">
+                    <span class="font-label-md text-sm uppercase tracking-widest">Subtotal</span>
+                    <span class="font-body-lg text-lg" id="cart-subtotal">Rs. 0.00</span>
+                </div>
+                <p class="font-body-md text-sm text-on-surface-variant mb-6 text-center">Shipping & taxes calculated at checkout.</p>
+                <button class="w-full py-4 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-[0.2em] transition-all hover:bg-secondary active:scale-95" onclick="alert('Checkout coming soon!')">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="js/app.js"></script>
     <script src="js/cart.js"></script>
@@ -192,7 +325,7 @@
             // Find product or redirect
             const product = PRODUCTS[productId];
             if (!product) {
-                window.location.href = 'index.html'; // Redirect if product not found
+                window.location.href = 'index.html';
                 return;
             }
 
@@ -208,17 +341,29 @@
             const sizeBtns = document.querySelectorAll('.size-btn');
             sizeBtns.forEach(btn => {
                 btn.addEventListener('click', (e) => {
-                    // Remove active state from all
                     sizeBtns.forEach(b => {
-                        b.classList.remove('bg-black', 'text-white');
-                        b.classList.add('border-gray-300');
+                        b.classList.remove('bg-primary', 'text-on-primary', 'border-primary');
+                        b.classList.add('border-outline-variant');
                     });
-                    // Add active state to clicked
                     const target = e.target;
-                    target.classList.add('bg-black', 'text-white');
-                    target.classList.remove('border-gray-300');
+                    target.classList.add('bg-primary', 'text-on-primary', 'border-primary');
+                    target.classList.remove('border-outline-variant');
                     selectedSize = target.getAttribute('data-size');
                 });
+            });
+
+            // Handle Quantity
+            let quantity = 1;
+            const qtyValue = document.getElementById('qty-value');
+            document.getElementById('qty-minus').addEventListener('click', () => {
+                if (quantity > 1) {
+                    quantity--;
+                    qtyValue.innerText = quantity;
+                }
+            });
+            document.getElementById('qty-plus').addEventListener('click', () => {
+                quantity++;
+                qtyValue.innerText = quantity;
             });
 
             // Handle Add to Cart
@@ -228,7 +373,7 @@
                     alert('Please select a size first.');
                     return;
                 }
-                addToCart(productId, selectedSize, 1);
+                addToCart(productId, selectedSize, quantity);
             });
         });
     </script>
