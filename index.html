@@ -104,12 +104,14 @@
       <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
-<!-- TopAppBar Small (Announcement Bar) -->
-<header class="bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container font-label-md text-[10px] md:text-label-md tracking-wider md:tracking-[0.2em] uppercase flex justify-center items-center text-center w-full py-1.5 px-2 leading-tight docked full-width top-0 z-[60]">
+<!-- Sticky Header Container -->
+<div class="sticky top-0 z-[60] w-full flex flex-col">
+    <!-- TopAppBar Small (Announcement Bar) -->
+    <header class="bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container font-label-md text-[10px] md:text-label-md tracking-wider md:tracking-[0.2em] uppercase flex justify-center items-center text-center w-full py-1.5 px-2 leading-tight">
         For Urgent Express Shipping - Whatsapp us | Prepaid Orders FREE Blindfold
     </header>
-<!-- TopAppBar Medium (Navigation) -->
-<nav class="bg-surface-bright dark:bg-surface sticky top-[28px] md:top-[36px] z-50 border-b border-outline-variant dark:border-outline">
+    <!-- TopAppBar Medium (Navigation) -->
+    <nav class="bg-surface-bright dark:bg-surface border-b border-outline-variant dark:border-outline">
 <div class="flex justify-between items-center w-full px-4 md:px-5 py-2 md:py-4 max-w-container-max mx-auto">
 <!-- Hamburger for Mobile -->
 <button class="md:hidden p-2 active:scale-95 transition-transform" onclick="toggleMenu()">
@@ -132,7 +134,8 @@
 <button class="material-symbols-outlined hover:text-secondary transition-colors">shopping_bag</button>
 </div>
 </div>
-</nav>
+    </nav>
+</div>
 <!-- Mobile Menu Overlay -->
 <div class="fixed inset-0 bg-surface-bright z-[70] translate-x-full transition-transform duration-500 md:hidden" id="mobile-menu">
 <div class="p-6 flex flex-col h-full">
